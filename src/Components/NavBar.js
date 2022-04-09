@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Button from 'react-bootstrap/Button'
+import { AiOutlineMenu } from "react-icons/ai";
 
 
 function NavBar({ show, setShow, handleShow }){
@@ -12,7 +13,7 @@ function NavBar({ show, setShow, handleShow }){
         <Navbar bg="dark" variant="dark">
             <Container>
                 <Button id="sidebar-bttn" variant="primary" onClick={handleShow}>
-                    Launch
+                    <AiOutlineMenu />
                 </Button>
                 <ul>
                     <li style={{display: "inline", marginRight: "20px"}}>
