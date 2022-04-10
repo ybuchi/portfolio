@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Button from 'react-bootstrap/Button'
+import { AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineLinkedin } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 import "./NavBar.css";
 
@@ -25,6 +27,12 @@ function NavBar({ show, setShow, handleShow }){
                     </li>
                     <li style={{display: "inline", marginLeft: "20px"}}>
                         <Link className="navbar-link" to="/portfolio">Portfolio</Link>
+                    </li>
+                    <li style={{display: "inline", marginLeft: "20px", fontSize: "1.5rem"}}>
+                        <AiOutlineGithub style={{color: "white"}} />
+                    </li>
+                    <li style={{display: "inline", marginLeft: "20px", fontSize: "1.5rem"}}>
+                        <AiOutlineLinkedin style={{color: "white"}} />
                     </li>
                 </ul>
                 
