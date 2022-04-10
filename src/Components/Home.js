@@ -23,13 +23,14 @@ function Home(){
     // How I work
     // Tools I use
 
+    const jumboStyle = {backgroundColor: "black", color: "white"};
 
     return(
         // Have the "Hi, Bonjour, Hallo" placed horizontally from each other and some animation that boldens each of them one at a time
         <>
 
-            <Jumbotron>
-                <Container>
+            <Jumbotron jumboStyle={jumboStyle}>
+                <Container >
                     <Row>
                         <Col md={6}>
                             <h1>Hi!</h1>
