@@ -5,27 +5,29 @@ import { Link } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Button from 'react-bootstrap/Button'
 import { AiOutlineMenu } from "react-icons/ai";
+import "./NavBar.css";
 
 
 function NavBar({ show, setShow, handleShow }){
   
     return(
         <Navbar bg="dark" variant="dark">
-            <Container>
-                <Button id="sidebar-bttn" variant="primary" onClick={handleShow}>
-                    <AiOutlineMenu />
-                </Button>
-                <ul>
+            <Button id="sidebar-btn" variant="primary" onClick={handleShow}>
+                <AiOutlineMenu />
+            </Button>
+            <Container style={{margin: "0px 0px", padding: "5px 0px"}}>
+                <ul id="navbar-list">
                     <li style={{display: "inline", marginRight: "20px"}}>
-                        <Link to="/home">Yannik Büchi</Link>
+                        <Link className="navbar-link" to="/home">Yannik Büchi</Link>
                     </li>
                     <li style={{display: "inline"}}>
-                        <Link to="/about">About</Link>
+                        <Link className="navbar-link" to="/about">About</Link>
                     </li>
                     <li style={{display: "inline", marginLeft: "20px"}}>
-                        <Link to="/portfolio">Portfolio</Link>
+                        <Link className="navbar-link" to="/portfolio">Portfolio</Link>
                     </li>
                 </ul>
+                
             </Container>
         </Navbar>
     )

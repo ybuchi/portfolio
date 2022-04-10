@@ -1,0 +1,11 @@
+.navbar-link{
+    text-decoration: none;
+    font-size: 20px;
+}
+#navbar-list{
+    margin-bottom: 0px;
+}
+
+#sidebar-btn{
+    margin-left: 10px;
+}
