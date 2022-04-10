@@ -30,26 +30,40 @@ function Home(){
         <>
 
             <Jumbotron jumboStyle={jumboStyle}>
-                <Container >
-                    <Row>
-                        <Col md={6} stye={{position: "relative"}}>
-                            <div className="content">
+
+                        <div stye={{position: "relative"}}>
+                            <div className="content" style={{left: "25%", fontSize:"45px"}}>
                                 <div className="content_container">
-                                    <ul className="content__container__list">
+                                    <ul className="content__container__list" style={{animationDelay: "1s"}}>
                                         <li >Hi!</li>
                                         <li className="content__container__list__item">Bonjour!</li>
                                         <li className="content__container__list__item">Hallo!</li>
-                                        <li className="content__container__list__item">Grüezi!</li>
+                                        <li className="content__container__list__item">
+                                            <img id="nav-logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo"/>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                        </Col>
-                        <Col md={6}>
-                            <h1>I'm <strong>Yannik</strong>,</h1>
-                            <h3>A <strong>mission-driven</strong> developper</h3>
-                        </Col>
-                    </Row>
-                </Container>
+                        </div>
+                        <div className="content" style={{left: "75%", fontSize:"30px"}}>
+                            <div className="content_container" style={{width: "400px"}}>
+                                    <ul className="content__container__list">
+                                        <li className="content__container__list__item">
+                                            mission-driven
+                                        </li>
+                                        <li className="content__container__list__item">
+                                            environmental
+                                        </li>
+                                        <li className="content__container__list__item">
+                                            full-stack
+                                        </li>
+                                        <li className="content__container__list__item">
+                                            really cool
+                                        </li>
+                                        
+                                    </ul>
+                            </div>
+                        </div>
             </Jumbotron>
 
             {/* Navigations to Mission, How I work and Tools */}
