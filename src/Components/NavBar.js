@@ -17,6 +17,7 @@ function NavBar({ show, setShow, handleShow }){
             <Button id="sidebar-btn" variant="primary" onClick={handleShow}>
                 <AiOutlineMenu />
             </Button>
+            <img id="nav-logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo"/>
             <Container style={{margin: "0px 0px", padding: "5px 0px"}}>
                 <ul id="navbar-list">
                     <li style={{display: "inline", marginRight: "20px"}}>
