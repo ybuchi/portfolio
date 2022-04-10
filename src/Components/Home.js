@@ -23,20 +23,33 @@ function Home(){
 
     return(
         // Have the "Hi, Bonjour, Hallo" placed horizontally from each other and some animation that boldens each of them one at a time
-       <Jumbotron>
-           <Container>
-               <Row>
-                   <Col md={6}>
-                       Hi!
-                       Bonjour!
-                       Hallo!
-                   </Col>
-                   <Col md={6}>
-                       My name is Yannik and I'm a Mission-Driven Software Engineer
-                   </Col>
-               </Row>
-           </Container>
-       </Jumbotron>
+        <>
+
+        <Jumbotron>
+            <Container>
+                <Row>
+                    <Col md={6}>
+                        <h1>Hi!</h1>
+                        <h2>Bonjour!</h2>
+                        <h3>Hallo!</h3>
+                    </Col>
+                    <Col md={6}>
+                        <h1>I'm <strong>Yannik</strong>,</h1>
+                        <h3>A <strong>mission-driven</strong> developper</h3>
+                    </Col>
+                </Row>
+            </Container>
+        </Jumbotron>
+
+
+        {/* Navigations to Mission, How I work and Tools */}
+
+        <h1>Mission</h1>
+
+        <h1>How I work</h1>
+
+        <h1>Tools</h1>
+       </>
     )
 }
 
