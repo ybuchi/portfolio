@@ -33,9 +33,15 @@ function Home(){
                 <Container >
                     <Row>
                         <Col md={6}>
-                            <h1>Hi!</h1>
-                            <h2>Bonjour!</h2>
-                            <h3>Hallo!</h3>
+                            <div className="content">
+                                <div className="content_container">
+                                    <ul className="content__container__list">
+                                        <li >Hi!</li>
+                                        <li className="content__container__list__item">Bonjour!</li>
+                                        <li className="content__container__list__item">Hallo!</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </Col>
                         <Col md={6}>
                             <h1>I'm <strong>Yannik</strong>,</h1>
