@@ -32,13 +32,14 @@ function Home(){
             <Jumbotron jumboStyle={jumboStyle}>
                 <Container >
                     <Row>
-                        <Col md={6}>
+                        <Col md={6} stye={{position: "relative"}}>
                             <div className="content">
                                 <div className="content_container">
                                     <ul className="content__container__list">
                                         <li >Hi!</li>
                                         <li className="content__container__list__item">Bonjour!</li>
                                         <li className="content__container__list__item">Hallo!</li>
+                                        <li className="content__container__list__item">Grüezi!</li>
                                     </ul>
                                 </div>
                             </div>
