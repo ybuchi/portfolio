@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { mission } from "../HomePageData/homeData";
+import "./Home.css";
 import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button'
 
 // What do we want on our home page?
 // Introductory Jumbotron
@@ -41,14 +44,19 @@ function Home(){
             </Container>
         </Jumbotron>
 
-
         {/* Navigations to Mission, How I work and Tools */}
+        <Button className="page-nav-btn" variant="info">Mission</Button>
+        <Button className="page-nav-btn" variant="info">Work</Button>
+        <Button className="page-nav-btn" variant="info">Tools</Button>
 
         <h1>Mission</h1>
+        <p>{mission.paragraph}</p>
 
-        <h1>How I work</h1>
+        <h1>Work</h1>
+        <p>{mission.paragraph}</p>
 
         <h1>Tools</h1>
+        <p>{mission.paragraph}</p>
        </>
     )
 }
