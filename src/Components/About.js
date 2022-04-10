@@ -1,8 +1,13 @@
 import React from "react";
+import Jumbotron from "./Jumbotron";
+import { about } from "../Data/data"
 
 function About(){
     return(
-        <h1>About Page</h1>
+        <Jumbotron>
+            <h1>About Page</h1>
+            <p>{about.quote}</p>
+        </Jumbotron>
     )
 }
 
