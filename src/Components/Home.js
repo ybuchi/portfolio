@@ -99,21 +99,26 @@ function Home(){
             </div>
             
             <div className="page-text-container">
-                <h1 id="mission">Mission</h1>
+                <h1 className="page-section-header"id="mission">Mission</h1>
                 <h3 className="page-text-q">{mission.quote}</h3>
                 <p className="page-text-p">{mission.paragraph}</p>
                 
             </div>
             
             <div className="page-text-container">
-                <h1 id="work">Work</h1>
-                <p className="page-text-p">{work.paragraph}</p>
+                <h1 className="page-section-header" id="work">Work</h1>
+                <p className="page-text-p">{work.paragraph1}</p>
+                <p className="page-text-p">{work.paragraph2}</p>
+                <p className="page-text-p">{work.paragraph3}</p>
+                <p className="page-text-p">{work.paragraph4}</p>
             </div>
             
-
-            <h1 id="tools">Tools</h1>
-            <p>{work_tools.paragraph}</p>
-
+            <div className="page-text-container">
+                <h1 className="page-section-header" id="tools">Tools</h1>
+                <p className="page-text-p">{work_tools.paragraph1}</p>
+                <p className="page-text-p">{work_tools.paragraph2}</p>
+                <p className="page-text-p">{work_tools.paragraph3}</p>
+            </div>
         </>
     )
 }
