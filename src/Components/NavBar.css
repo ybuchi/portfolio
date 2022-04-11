@@ -1,0 +1,23 @@
+.navbar-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#navbar-list{
+    margin-bottom: 0px;
+}
+
+#sidebar-btn{
+    margin-left: 10px;
+    background-color: transparent;
+    border: white 1.5px solid;
+}
+
+
+
+#nav-logo{
+    width: 30px;
+}
+/* #logo{
+    width: 60px
+} */

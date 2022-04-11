@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { mission } from "../Data/data";
+import { mission, work_tools, work } from "../Data/data";
 import "./Home.css";
 import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
@@ -23,40 +23,86 @@ function Home(){
     // How I work
     // Tools I use
 
+    const jumboStyle = {backgroundColor: "black", color: "white"};
+
+    function handleScrollToSection(e){
+        const elementId = e.target.value
+        document.getElementById(elementId).scrollIntoView()
+    }
+    
 
     return(
         // Have the "Hi, Bonjour, Hallo" placed horizontally from each other and some animation that boldens each of them one at a time
         <>
 
-            <Jumbotron>
-                <Container>
-                    <Row>
-                        <Col md={6}>
-                            <h1>Hi!</h1>
-                            <h2>Bonjour!</h2>
-                            <h3>Hallo!</h3>
-                        </Col>
-                        <Col md={6}>
-                            <h1>I'm <strong>Yannik</strong>,</h1>
-                            <h3>A <strong>mission-driven</strong> developper</h3>
-                        </Col>
-                    </Row>
-                </Container>
+            <Jumbotron jumboStyle={jumboStyle}>
+
+                        <div stye={{position: "relative"}}>
+                            <div className="content" style={{left: "25%", fontSize:"50px"}}>
+                                <div className="content_container">
+                                    <ul className="content__container__list" style={{animationDelay: "1s"}}>
+                                        <li >Hi!</li>
+                                        <li className="content__container__list__item">Bonjour!</li>
+                                        <li className="content__container__list__item">Hallo!</li>
+                                        <li className="content__container__list__item">
+                                            <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="content" style={{left: "75%", fontSize:"30px"}}>
+                            <div className="content_container" style={{width: "400px"}}>
+                                    <ul className="content__container__list">
+                                        <li className="content__container__list__item">
+                                            mission-driven
+                                        </li>
+                                        <li className="content__container__list__item">
+                                            environmental
+                                        </li>
+                                        <li className="content__container__list__item">
+                                            full-stack
+                                        </li>
+                                        <li className="content__container__list__item">
+                                            really cool
+                                        </li>
+                                        
+                                    </ul>
+                            </div>
+                        </div>
             </Jumbotron>
 
             {/* Navigations to Mission, How I work and Tools */}
-            <Button className="page-nav-btn" variant="info">Mission</Button>
-            <Button className="page-nav-btn" variant="info">Work</Button>
-            <Button className="page-nav-btn" variant="info">Tools</Button>
+            <div id="page-nav-btn-container">
+                <Button className="page-nav-btn" 
+                        variant="info"
+                        value="mission"
+                        onClick={handleScrollToSection}>
+                        Mission
+                </Button>
+                <Button className="page-nav-btn" 
+                        variant="info"
+                        value="work"
+                        onClick={handleScrollToSection}>
+                        Work
+                </Button>
+                <Button className="page-nav-btn" 
+                        variant="info"
+                        value="tools"
+                        onClick={handleScrollToSection}>
+                        Tools
+                </Button>
+            </div>
+            
 
-            <h1>Mission</h1>
+            <h1 id="mission">Mission</h1>
             <p>{mission.paragraph}</p>
 
-            <h1>Work</h1>
-            <p>{mission.paragraph}</p>
+            <h1 id="work">Work</h1>
+            <p>{work.paragraph}</p>
 
-            <h1>Tools</h1>
-            <p>{mission.paragraph}</p>
+            <h1 id="tools">Tools</h1>
+            <p>{work_tools.paragraph}</p>
 
         </>
     )
