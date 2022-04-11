@@ -3,9 +3,6 @@ import { mission, work_tools, work } from "../Data/data";
 import "./Home.css";
 import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
 import Button from 'react-bootstrap/Button'
 
 // What do we want on our home page?
@@ -122,5 +119,4 @@ function Home(){
         </>
     )
 }
-
 export default Home;
