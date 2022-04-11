@@ -1,6 +1,6 @@
 .page-nav-btn{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .content__container__list {
     margin-top: 0;
@@ -46,6 +46,12 @@
     animation-iteration-count: infinite;
 }
 
+#page-nav-btn-container{
+    margin: 40px auto;
+}
+#logo{
+    height: 60px;
+}
 //Animatons for Home
 @-webkit-keyframes opacity {
     0%, 100% {

@@ -9,9 +9,15 @@
 
 #sidebar-btn{
     margin-left: 10px;
+    background-color: transparent;
+    border: white 1.5px solid;
 }
 
+
+
 #nav-logo{
-    width: 90px;
-    margin-left: 20px;
+    width: 30px;
 }
+/* #logo{
+    width: 60px
+} */

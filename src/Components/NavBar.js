@@ -14,14 +14,14 @@ function NavBar({ show, setShow, handleShow }){
   
     return(
         <Navbar bg="dark" variant="dark">
-            <Button id="sidebar-btn" variant="primary" onClick={handleShow}>
-                <AiOutlineMenu />
+            <Button id="sidebar-btn" variant="primary" onClick={handleShow} style={{marginLeft: "25px"}}>
+                {/* <AiOutlineMenu /> */}
+                <img id="nav-logo" src={require("./Images/MyLogo-B&W.png")} alt="menu"/>
             </Button>
-            <img id="nav-logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo"/>
             <Container style={{margin: "0px 0px", padding: "5px 0px"}}>
                 <ul id="navbar-list">
                     <li style={{display: "inline", marginRight: "20px"}}>
-                        <Link className="navbar-link" to="/home">Yannik Büchi</Link>
+                        <Link className="navbar-link" to="/home">Home</Link>
                     </li>
                     <li style={{display: "inline"}}>
                         <Link className="navbar-link" to="/about">About</Link>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { mission } from "../Data/data";
+import { mission, work_tools, work } from "../Data/data";
 import "./Home.css";
 import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
@@ -25,6 +25,12 @@ function Home(){
 
     const jumboStyle = {backgroundColor: "black", color: "white"};
 
+    function handleScrollToSection(e){
+        const elementId = e.target.value
+        document.getElementById(elementId).scrollIntoView()
+    }
+    
+
     return(
         // Have the "Hi, Bonjour, Hallo" placed horizontally from each other and some animation that boldens each of them one at a time
         <>
@@ -32,14 +38,14 @@ function Home(){
             <Jumbotron jumboStyle={jumboStyle}>
 
                         <div stye={{position: "relative"}}>
-                            <div className="content" style={{left: "25%", fontSize:"45px"}}>
+                            <div className="content" style={{left: "25%", fontSize:"50px"}}>
                                 <div className="content_container">
                                     <ul className="content__container__list" style={{animationDelay: "1s"}}>
                                         <li >Hi!</li>
                                         <li className="content__container__list__item">Bonjour!</li>
                                         <li className="content__container__list__item">Hallo!</li>
                                         <li className="content__container__list__item">
-                                            <img id="nav-logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo"/>
+                                            <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />
                                         </li>
                                     </ul>
                                 </div>
@@ -67,18 +73,36 @@ function Home(){
             </Jumbotron>
 
             {/* Navigations to Mission, How I work and Tools */}
-            <Button className="page-nav-btn" variant="info">Mission</Button>
-            <Button className="page-nav-btn" variant="info">Work</Button>
-            <Button className="page-nav-btn" variant="info">Tools</Button>
+            <div id="page-nav-btn-container">
+                <Button className="page-nav-btn" 
+                        variant="info"
+                        value="mission"
+                        onClick={handleScrollToSection}>
+                        Mission
+                </Button>
+                <Button className="page-nav-btn" 
+                        variant="info"
+                        value="work"
+                        onClick={handleScrollToSection}>
+                        Work
+                </Button>
+                <Button className="page-nav-btn" 
+                        variant="info"
+                        value="tools"
+                        onClick={handleScrollToSection}>
+                        Tools
+                </Button>
+            </div>
+            
 
-            <h1>Mission</h1>
+            <h1 id="mission">Mission</h1>
             <p>{mission.paragraph}</p>
 
-            <h1>Work</h1>
-            <p>{mission.paragraph}</p>
+            <h1 id="work">Work</h1>
+            <p>{work.paragraph}</p>
 
-            <h1>Tools</h1>
-            <p>{mission.paragraph}</p>
+            <h1 id="tools">Tools</h1>
+            <p>{work_tools.paragraph}</p>
 
         </>
     )

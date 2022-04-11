@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function ProjectCard (){
     const mappedPortfolio = portfolio.map((project)=>{
         return (
-            <Carousel.Item >
+            <Carousel.Item key={project.id}>
                 <img  style={{width: "100%"}}src={require("./Images/mountain.jpg")} alt="moutain"/>
                 <Carousel.Caption>
                     <h1>{project.project_name}</h1>
