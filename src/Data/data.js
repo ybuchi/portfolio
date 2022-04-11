@@ -1,13 +1,13 @@
 const mission = {
-    quote: "This is a paragraph I want to quote.",
-    paragraph: "Write about a short paragraph about your mission here. My mission as a coder is to help socially-minded people and companies achieve positive environmental and social change and responsibility. ",
+    quote: "My mission is to leverage my diverse background to relate and advance environmental/social issues using the limitless power of coding.",
+    paragraph: "As a programmer with an educational background in biology and french studies, I have spent a lot of time working in both the sciences and in the humanities, looking for innovative ways to support crucial initiatives related to the environment and society.",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }
 
 const work = {
     quote: "This is a paragraph I want to quote.",
-    paragraph: "Work work work",
+    paragraph: "Throughout my professional career, I've had the opportunity to work in education, data analytics, and full-stack engineering. My hard skills include building powerful front-ends and back-ends in web development using languages and frameworks including JavaScript, React and Ruby as well as analyzing large, complex data sets using SQL, Python, Tableau and Databricks.",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }

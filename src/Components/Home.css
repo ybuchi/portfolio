@@ -52,6 +52,40 @@
 #logo{
     height: 60px;
 }
+.page-text-container{
+    margin: 20px 30px;
+}
+#mission{
+    text-align: left;
+}
+.page-text-p{
+    text-align: left;
+    margin: 25px 25px;
+}
+.page-text-q{
+    margin: 30px 30px;
+    font-size: 25px;
+    font-style: italic;
+}
+.page-text-q:before{
+    content: '"';
+}
+.page-text-q:after{
+    content: '"'
+}
+.page-text-q:before, .page-text-q:after{
+    /* position: absolute;
+	 top: 0; */
+	 color: red;
+	 font-size: 30px;
+	 /* line-height: 40px; */
+	 -webkit-animation-name: opacity;
+	 -webkit-animation-duration: 2s;
+	 -webkit-animation-iteration-count: infinite;
+	 animation-name: opacity;
+	 animation-duration: 2s;
+	 animation-iteration-count: infinite;
+}
 //Animatons for Home
 @-webkit-keyframes opacity {
     0%, 100% {

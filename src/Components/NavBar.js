@@ -15,7 +15,6 @@ function NavBar({ show, setShow, handleShow }){
     return(
         <Navbar bg="dark" variant="dark">
             <Button id="sidebar-btn" variant="primary" onClick={handleShow} style={{marginLeft: "25px"}}>
-                {/* <AiOutlineMenu /> */}
                 <img id="nav-logo" src={require("./Images/MyLogo-B&W.png")} alt="menu"/>
             </Button>
             <Container style={{margin: "0px 0px", padding: "5px 0px"}}>

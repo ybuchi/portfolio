@@ -51,6 +51,10 @@ function Home(){
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <h2>My name is</h2>
+                            <h1>Yannik</h1>
+                        </div>
                         <div className="content" style={{left: "75%", fontSize:"30px"}}>
                             <div className="content_container" style={{width: "400px"}}>
                                     <ul className="content__container__list">
@@ -94,12 +98,18 @@ function Home(){
                 </Button>
             </div>
             
-
-            <h1 id="mission">Mission</h1>
-            <p>{mission.paragraph}</p>
-
-            <h1 id="work">Work</h1>
-            <p>{work.paragraph}</p>
+            <div className="page-text-container">
+                <h1 id="mission">Mission</h1>
+                <h3 className="page-text-q">{mission.quote}</h3>
+                <p className="page-text-p">{mission.paragraph}</p>
+                
+            </div>
+            
+            <div className="page-text-container">
+                <h1 id="work">Work</h1>
+                <p className="page-text-p">{work.paragraph}</p>
+            </div>
+            
 
             <h1 id="tools">Tools</h1>
             <p>{work_tools.paragraph}</p>
