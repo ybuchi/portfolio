@@ -17,7 +17,7 @@ function NavBar({ show, setShow, handleShow }){
             <Button id="sidebar-btn" variant="primary" onClick={handleShow} style={{marginLeft: "25px"}}>
                 <img id="nav-logo" src={require("./Images/MyLogo-B&W.png")} alt="menu"/>
             </Button>
-            <Container style={{margin: "0px 0px", padding: "5px 0px"}}>
+            <nav style={{margin: "0px 0px", padding: "5px 0px"}}>
                 <ul id="navbar-list">
                     <li style={{display: "inline", marginRight: "20px"}}>
                         <Link className="navbar-link" to="/home">Home</Link>
@@ -28,15 +28,22 @@ function NavBar({ show, setShow, handleShow }){
                     <li style={{display: "inline", marginLeft: "20px"}}>
                         <Link className="navbar-link" to="/portfolio">Portfolio</Link>
                     </li>
+                </ul>
+            </nav>
+            <nav className="ms-auto" style={{marginRight: "25px"}}>
+                <ul>
                     <li style={{display: "inline", marginLeft: "20px", fontSize: "1.5rem"}}>
-                        <AiOutlineGithub style={{color: "white"}} />
+                        <a href="https://github.com/ybuchi" target="blank">
+                            <AiOutlineGithub style={{color: "white"}} />
+                        </a>
                     </li>
                     <li style={{display: "inline", marginLeft: "20px", fontSize: "1.5rem"}}>
-                        <AiOutlineLinkedin style={{color: "white"}} />
+                        <a href="https://www.linkedin.com/in/yannikbuchi" target="blank">
+                            <AiOutlineLinkedin style={{color: "white"}} />
+                        </a>
                     </li>
                 </ul>
-                
-            </Container>
+            </nav>
         </Navbar>
     )
 }

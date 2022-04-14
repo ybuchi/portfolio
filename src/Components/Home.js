@@ -5,6 +5,7 @@ import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
 import Button from 'react-bootstrap/Button'
 
+
 // What do we want on our home page?
 // Introductory Jumbotron
 // Small About
@@ -33,7 +34,6 @@ function Home(){
         <>
 
             <Jumbotron jumboStyle={jumboStyle}>
-
                         <div stye={{position: "relative"}}>
                             <div className="content" style={{left: "25%", fontSize:"50px"}}>
                                 <div className="content_container">
@@ -96,9 +96,10 @@ function Home(){
             </div>
             
             <div className="page-text-container">
-                <h1 className="page-section-header"id="mission">Mission</h1>
-                <h3 className="page-text-q">{mission.quote}</h3>
-                <p className="page-text-p">{mission.paragraph}</p>
+           
+            <h1 className="page-section-header"id="mission">Mission</h1>
+            <h3 className="page-text-q">{mission.quote}</h3>
+            <p className="page-text-p">{mission.paragraph}</p>
                 
             </div>
             
