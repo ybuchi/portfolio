@@ -88,7 +88,7 @@ function Home(){
                         </Col>
                         <Col>
                             <div className="recent-project">
-                                
+
                             </div>
                         </Col>
                     </Row>
@@ -118,26 +118,50 @@ function Home(){
             </div>
             
             <div className="page-text-container">
-           
-            <h1 className="page-section-header"id="mission">Mission</h1>
-            <h3 className="page-text-q">{mission.quote}</h3>
-            <p className="page-text-p">{mission.paragraph}</p>
+                <Container>
+                    <Row>
+                        <Col sm={12} md={6}>
+                            <h1 className="page-section-header"id="mission">Mission</h1>
+                            <h3 className="page-text-q">{mission.quote}</h3>
+                        </Col>
+                        <Col sm={12} md={6}>
+                            <p className="page-text-p">{mission.paragraph}</p>
+                        </Col>
+                    </Row>   
+                </Container> 
+            </div>
+            
+            <div className="page-text-container">
+                <Container>
+                    <Row>
+                        <Col sm={12} md={6}>
+                            <h1 className="page-section-header" id="work">Work</h1>
+                        </Col>
+                        <Col sm={12} md={6}>
+                            <p className="page-text-p">{work.paragraph1}</p>
+                            <p className="page-text-p">{work.paragraph2}</p>
+                            <p className="page-text-p">{work.paragraph3}</p>
+                            <p className="page-text-p">{work.paragraph4}</p>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            
+            <div className="page-text-container">
+                <Container>
+                    <Row>
+                        <Col sm={12} md={6}>
+                            <h1 className="page-section-header" id="tools">Tools</h1>
+                        </Col>
+                        <Col sm={12} md={6}>
+                            <p className="page-text-p">{work_tools.paragraph1}</p>
+                            <p className="page-text-p">{work_tools.paragraph2}</p>
+                            <p className="page-text-p">{work_tools.paragraph3}</p>
+                        </Col>
+                    </Row>
+                </Container>
                 
-            </div>
-            
-            <div className="page-text-container">
-                <h1 className="page-section-header" id="work">Work</h1>
-                <p className="page-text-p">{work.paragraph1}</p>
-                <p className="page-text-p">{work.paragraph2}</p>
-                <p className="page-text-p">{work.paragraph3}</p>
-                <p className="page-text-p">{work.paragraph4}</p>
-            </div>
-            
-            <div className="page-text-container">
-                <h1 className="page-section-header" id="tools">Tools</h1>
-                <p className="page-text-p">{work_tools.paragraph1}</p>
-                <p className="page-text-p">{work_tools.paragraph2}</p>
-                <p className="page-text-p">{work_tools.paragraph3}</p>
+                
             </div>
         </>
     )
