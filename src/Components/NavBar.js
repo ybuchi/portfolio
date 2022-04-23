@@ -30,8 +30,8 @@ function NavBar({ show, setShow, handleShow }){
                     </li>
                 </ul>
             </nav>
-            <nav className="ms-auto" style={{marginRight: "25px"}}>
-                <ul>
+            <nav  className="ms-auto" style={{marginRight: "25px"}}>
+                <ul id="menu-items">
                     <li style={{display: "inline", marginLeft: "20px", fontSize: "1.5rem"}}>
                         <a href="https://github.com/ybuchi" target="blank">
                             <AiOutlineGithub style={{color: "white"}} />

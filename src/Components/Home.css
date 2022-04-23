@@ -26,6 +26,14 @@
     left: 50%;
     font-size: 30px;
 }
+
+.recent-project{
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: gray;
+    margin: auto;
+}
 .page-nav-btn{
     margin-left: 30px;
     margin-right: 30px;
@@ -113,11 +121,7 @@
 	 animation-duration: 2s;
 	 animation-iteration-count: infinite;
 }
-footer {
-    height: 300px;
-    background-color: black;
-    color: white;
-}
+
 //Animatons for Home
 @-webkit-keyframes opacity {
     0%, 100% {

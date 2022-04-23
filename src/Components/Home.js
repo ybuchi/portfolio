@@ -3,7 +3,10 @@ import { mission, work_tools, work } from "../Data/data";
 import "./Home.css";
 import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 // What do we want on our home page?
@@ -73,6 +76,24 @@ function Home(){
                         </div>
                         <div className="absolute" id="software-engineer">software engineer</div>
             </Jumbotron>
+
+            <div className="recent-projects">
+                <h2>Recent Projects</h2>
+                <Container>
+                    <Row>
+                        <Col sm={12} md={6}>
+                            <div className="recent-project">
+
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className="recent-project">
+                                
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
 
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">
