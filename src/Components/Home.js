@@ -21,7 +21,7 @@ function Home(){
     // How I work
     // Tools I use
 
-    const jumboStyle = {backgroundColor: "black", color: "white"};
+    const jumboStyle = {backgroundColor: "black", color: "white", position: "relative"};
 
     function handleScrollToSection(e){
         const elementId = e.target.value
@@ -34,10 +34,10 @@ function Home(){
         <>
 
             <Jumbotron jumboStyle={jumboStyle}>
-                        <div stye={{position: "relative"}}>
-                            <div className="content" style={{left: "25%", fontSize:"50px"}}>
+                        <div>
+                            <div id="greetings" className="content" style={{left: "25%", fontSize:"50px"}}>
                                 <div className="content_container">
-                                    <ul className="content__container__list" style={{animationDelay: "1s"}}>
+                                    <ul  className="content__container__list" style={{animationDelay: "1s"}}>
                                         <li >Hi!</li>
                                         <li className="content__container__list__item">Bonjour!</li>
                                         <li className="content__container__list__item">Hallo!</li>
@@ -48,11 +48,12 @@ function Home(){
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <h2>My name is</h2>
-                            <h1>Yannik</h1>
-                        </div>
-                        <div className="content" style={{left: "75%", fontSize:"30px"}}>
+                        
+                        <div className="absolute" id="my-name-is">I'm</div>
+                        <div className="absolute" id="yannik">YANNIK</div>
+                        <div className="absolute" id="i-am-a">I am a</div>
+                        
+                        <div id="adjectives" className="content">
                             <div className="content_container" style={{width: "400px"}}>
                                     <ul className="content__container__list">
                                         <li className="content__container__list__item">
@@ -67,10 +68,10 @@ function Home(){
                                         <li className="content__container__list__item">
                                             really cool
                                         </li>
-                                        
                                     </ul>
                             </div>
                         </div>
+                        <div className="absolute" id="software-engineer">software engineer</div>
             </Jumbotron>
 
             {/* Navigations to Mission, How I work and Tools */}

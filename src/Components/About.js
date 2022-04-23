@@ -19,6 +19,8 @@ function About(){
         </Jumbotron>
         <h1>Introduction Here</h1>
         <p>Introduction paragraph</p>
+
+        
         </>
     )
 }
