@@ -1,38 +1,67 @@
 .absolute {
-    position: absolute;
+    /* position: absolute; */
+}
+.relative{
+    position: relative;
+    height: 100%;
 }
 #my-name-is{
-    left: 39%;
+    /* left: 39%;
     top: 30%;
-    transform: translate(-60%, -60%));
+    transform: translate(-60%, -60%)); */
     font-size: 40px;
 }
 #yannik{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
     font-size: 60px;
     font-weight: bold;
 }
 #software-engineer{
-    left: 50%;
-    transform: translateX(-50%)
+    /* left: 50%; */
+    /* transform: translateX(-50%) */
 }
 #greetings{
-    top: 68%;
+    position: absolute; 
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fontSize:50px;
+    /* top: 68%; */
 }
 #adjectives{
-    top: 80%;
-    left: 50%;
+    /* top: 80%;
+    left: 50%; */
     font-size: 30px;
+    text-align: center;
 }
 
 .recent-project{
-    height: 200px;
+    height: 250px;
     width: 400px;
+    margin: 20px auto;
+    border: black 1px solid;
     border-radius: 5px;
+    position: relative;
+}
+#first-proj-label{
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+}
+#first-recent-project{
+    background-image: url("./Images/Cuisto.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#second-recent-project{
     background-color: gray;
-    margin: auto;
+    
 }
 .page-nav-btn{
     margin-left: 30px;
@@ -51,8 +80,8 @@
 }
 
 .content {
-    position: absolute;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
     height: 190px;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
@@ -68,8 +97,8 @@
     padding: 0 40px;
 }
 .content_container:after, .content_container:before {
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0; */
     color: #16a085;
     font-size: 42px;
     line-height: 40px;

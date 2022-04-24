@@ -37,9 +37,12 @@ function Home(){
         <>
 
             <Jumbotron jumboStyle={jumboStyle}>
-                        <div>
-                            <div id="greetings" className="content" style={{left: "25%", fontSize:"50px"}}>
-                                <div className="content_container">
+                <Container>
+                    <Row>
+                        <Col  sm={12} md={6}>
+                            <div className="relative">
+                            <div id="greetings" className="content">
+                                <div className="content_container" style={{textAlign: "center"}}>
                                     <ul  className="content__container__list" style={{animationDelay: "1s"}}>
                                         <li >Hi!</li>
                                         <li className="content__container__list__item">Bonjour!</li>
@@ -50,44 +53,51 @@ function Home(){
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div className="absolute" id="my-name-is">I'm</div>
-                        <div className="absolute" id="yannik">YANNIK</div>
-                        <div className="absolute" id="i-am-a">I am a</div>
-                        
-                        <div id="adjectives" className="content">
-                            <div className="content_container" style={{width: "400px"}}>
-                                    <ul className="content__container__list">
-                                        <li className="content__container__list__item">
-                                            mission-driven
-                                        </li>
-                                        <li className="content__container__list__item">
-                                            environmental
-                                        </li>
-                                        <li className="content__container__list__item">
-                                            full-stack
-                                        </li>
-                                        <li className="content__container__list__item">
-                                            really cool
-                                        </li>
-                                    </ul>
                             </div>
-                        </div>
-                        <div className="absolute" id="software-engineer">software engineer</div>
+                        </Col>
+                        <Col className="relative" sm={12} md={6}>
+                            <Row>
+                                <Col style={{position:"relative"}} md={12}>
+                                    <div className="absolute" id="my-name-is">I'm</div>
+                                    <div className="absolute" id="yannik">YANNIK</div>
+                                    <div className="absolute" id="i-am-a">I am a</div>
+                                </Col>
+                                <Col style={{position:"relative"}} md={12}>
+                                    <div id="adjectives" className="content">
+                                        <div className="content_container" style={{width: "400px"}}>
+                                                <ul className="content__container__list">
+                                                    <li className="content__container__list__item">
+                                                        mission-driven
+                                                    </li>
+                                                    <li className="content__container__list__item">
+                                                        environmental
+                                                    </li>
+                                                    <li className="content__container__list__item">
+                                                        full-stack
+                                                    </li>
+                                                    <li className="content__container__list__item">
+                                                        really cool
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    <div className="absolute" id="software-engineer">software engineer</div>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>        
             </Jumbotron>
 
             <div className="recent-projects">
                 <h2>Recent Projects</h2>
                 <Container>
                     <Row>
-                        <Col sm={12} md={6}>
-                            <div className="recent-project">
-
-                            </div>
+                        <Col className="recent-project" id="first-recent-project" sm={12} md={6}>
+                            <h2 id="first-proj-label">Cuisto (in progress)</h2>
                         </Col>
-                        <Col>
-                            <div className="recent-project">
+                        <Col className="recent-project" id="second-recent-project" sm={12} md={6}>
+                            <div>
 
                             </div>
                         </Col>
@@ -114,6 +124,12 @@ function Home(){
                         value="tools"
                         onClick={handleScrollToSection}>
                         Tools
+                </Button>
+                <Button className="page-nav-btn" 
+                        variant="info"
+                        value="All Projects"
+                        onClick={handleScrollToSection}>
+                        All Projects
                 </Button>
             </div>
             
@@ -160,8 +176,6 @@ function Home(){
                         </Col>
                     </Row>
                 </Container>
-                
-                
             </div>
         </>
     )
