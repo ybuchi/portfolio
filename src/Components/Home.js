@@ -47,9 +47,9 @@ function Home(){
                                         <li >Hi!</li>
                                         <li className="content__container__list__item">Bonjour!</li>
                                         <li className="content__container__list__item">Hallo!</li>
-                                        <li className="content__container__list__item">
-                                            <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />
-                                        </li>
+                                        <li className="content__container__list__item"> Grüezi! </li>
+                                            {/* <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />
+                                        </li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -66,16 +66,16 @@ function Home(){
                                     <div id="adjectives" className="content">
                                         <div className="content_container" style={{width: "400px"}}>
                                                 <ul className="content__container__list">
-                                                    <li className="content__container__list__item">
+                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
                                                         mission-driven
                                                     </li>
-                                                    <li className="content__container__list__item">
+                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
                                                         environmental
                                                     </li>
-                                                    <li className="content__container__list__item">
+                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
                                                         full-stack
                                                     </li>
-                                                    <li className="content__container__list__item">
+                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
                                                         really cool
                                                     </li>
                                                 </ul>
@@ -108,25 +108,25 @@ function Home(){
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">
                 <Button className="page-nav-btn" 
-                        variant="info"
+                        variant="light"
                         value="mission"
                         onClick={handleScrollToSection}>
                         Mission
                 </Button>
                 <Button className="page-nav-btn" 
-                        variant="info"
+                        variant="light"
                         value="work"
                         onClick={handleScrollToSection}>
                         Work
                 </Button>
                 <Button className="page-nav-btn" 
-                        variant="info"
+                        variant="light"
                         value="tools"
                         onClick={handleScrollToSection}>
                         Tools
                 </Button>
                 <Button className="page-nav-btn" 
-                        variant="info"
+                        variant="light"
                         value="All Projects"
                         onClick={handleScrollToSection}>
                         All Projects
