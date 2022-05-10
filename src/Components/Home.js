@@ -24,7 +24,7 @@ function Home(){
     // How I work
     // Tools I use
 
-    const jumboStyle = {backgroundColor: "black", color: "white", position: "relative"};
+    const jumboStyle = {backgroundColor: "#19282F", color: "#A1B57D", position: "relative"};
 
     function handleScrollToSection(e){
         const elementId = e.target.value
@@ -136,8 +136,8 @@ function Home(){
             <div className="page-text-container">
                 <Container>
                     <Row>
-                        <Col sm={12} md={6}>
-                            <h1 className="page-section-header"id="mission">Mission</h1>
+                        <Col sm={12} md={6} id="mission-col-container" className="col-container">
+                            <h1 className="page-section-header" id="mission">Mission</h1>
                             <h3 className="page-text-q">{mission.quote}</h3>
                         </Col>
                         <Col sm={12} md={6}>
@@ -153,7 +153,7 @@ function Home(){
                         <Col sm={12} md={6}>
                             <h1 className="page-section-header" id="work">Work</h1>
                         </Col>
-                        <Col sm={12} md={6}>
+                        <Col sm={12} md={6} id="work-col-container" className="col-container">
                             <p className="page-text-p">{work.paragraph1}</p>
                             <p className="page-text-p">{work.paragraph2}</p>
                             <p className="page-text-p">{work.paragraph3}</p>
@@ -166,7 +166,7 @@ function Home(){
             <div className="page-text-container">
                 <Container>
                     <Row>
-                        <Col sm={12} md={6}>
+                        <Col sm={12} md={6} id="tools-col-container" className="col-container">
                             <h1 className="page-section-header" id="tools">Tools</h1>
                         </Col>
                         <Col sm={12} md={6}>
