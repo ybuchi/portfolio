@@ -8,21 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
-// What do we want on our home page?
-// Introductory Jumbotron
-// Small About
-// Overall Mission
-// How I work
-// Visualization of tools used (SQL, Python, Javascript, MERN, Ruby, Ruby on Rails, Express, MongoDB)
-
-
 function Home(){
-
-    // Introductory Jumbotron (that includes small about?)
-    // Overall mission
-    // How I work
-    // Tools I use
 
     const jumboStyle = {backgroundColor: "#19282F", color: "#A1B57D", position: "relative"};
     const backgroundImage = ""
@@ -34,31 +20,17 @@ function Home(){
     
 
     return(
-        // Have the "Hi, Bonjour, Hallo" placed horizontally from each other and some animation that boldens each of them one at a time
         <>
         {/* <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />*/}
 
             <Jumbotron jumboStyle={jumboStyle} backgroundImage={backgroundImage}>
                 <Container>
                     <Row>
-                        {/* <Col  sm={12} md={6}>
-                          
-                            <div id="greetings" className="content">
-                                <div className="content_container">
-                                    <ul  className="content__container__list" style={{animationDelay: "1s"}}>
-                                        <li >Hi!</li>
-                                        <li className="content__container__list__item">Bonjour!</li>
-                                        <li className="content__container__list__item">Hallo!</li>
-                                        <li className="content__container__list__item"> Grüezi! </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </Col> */}
                         <Col>
                             <Row>
                                 <Col md={12} style={{textAlign: "center"}}>
                                     <div>
+                                        <span>Hi! Bonjour! Grüezi!</span><br/>
                                         <span id="my-name-is">I'm </span>
                                         <span id="yannik">YANNIK, </span>
                                         <span id="i-am-a">a(n) </span>
