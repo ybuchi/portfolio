@@ -24,7 +24,8 @@ function Home(){
     // How I work
     // Tools I use
 
-    const jumboStyle = {backgroundColor: "#19282F", color: "#A1B57D", position: "relative"};
+    const jumboStyle = {backgroundColor: "#19282F", color: "#A1B57D"};
+    const backgroundImage = ""
 
     function handleScrollToSection(e){
         const elementId = e.target.value
@@ -35,53 +36,54 @@ function Home(){
     return(
         // Have the "Hi, Bonjour, Hallo" placed horizontally from each other and some animation that boldens each of them one at a time
         <>
+        {/* <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />*/}
 
-            <Jumbotron jumboStyle={jumboStyle}>
+            <Jumbotron jumboStyle={jumboStyle} backgroundImage={backgroundImage}>
                 <Container>
                     <Row>
-                        <Col  sm={12} md={6}>
-                            <div className="relative">
+                        {/* <Col  sm={12} md={6}>
+                          
                             <div id="greetings" className="content">
-                                <div className="content_container" style={{textAlign: "center"}}>
+                                <div className="content_container">
                                     <ul  className="content__container__list" style={{animationDelay: "1s"}}>
                                         <li >Hi!</li>
                                         <li className="content__container__list__item">Bonjour!</li>
                                         <li className="content__container__list__item">Hallo!</li>
                                         <li className="content__container__list__item"> Grüezi! </li>
-                                            {/* <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />
-                                        </li> */}
                                     </ul>
                                 </div>
                             </div>
-                            </div>
-                        </Col>
-                        <Col className="relative" sm={12} md={6}>
+
+                        </Col> */}
+                        <Col>
                             <Row>
-                                <Col style={{position:"relative"}} md={12}>
-                                    <div className="absolute" id="my-name-is">I'm</div>
-                                    <div className="absolute" id="yannik">YANNIK</div>
-                                    <div className="absolute" id="i-am-a">I am a</div>
-                                </Col>
-                                <Col style={{position:"relative"}} md={12}>
-                                    <div id="adjectives" className="content">
-                                        <div className="content_container" style={{width: "400px"}}>
+                                <Col md={12} style={{textAlign: "center"}}>
+                                    <div>
+                                        <span id="my-name-is">I'm </span>
+                                        <span id="yannik">YANNIK, </span>
+                                        <span id="i-am-a">a(n) </span>
+                                        <div id="adjectives" className="content" style={{textAlign: "center"}}>
+                                            <div className="content_container">
                                                 <ul className="content__container__list">
-                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
+                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
                                                         mission-driven
                                                     </li>
-                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
+                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
                                                         environmental
                                                     </li>
-                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
+                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
                                                         full-stack
                                                     </li>
-                                                    <li className="content__container__list__item" style={{color: "#B33030"}}>
+                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
                                                         really cool
                                                     </li>
                                                 </ul>
                                             </div>
+                                            <span id="software-engineer" style={{textAlign: "center"}}>software engineer</span> 
                                         </div>
-                                    <div className="absolute" id="software-engineer">software engineer</div>
+
+                                        
+                                    </div>
                                 </Col>
                             </Row>
                         </Col>
