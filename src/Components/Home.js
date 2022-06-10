@@ -24,7 +24,7 @@ function Home(){
     // How I work
     // Tools I use
 
-    const jumboStyle = {backgroundColor: "#19282F", color: "#A1B57D"};
+    const jumboStyle = {backgroundColor: "#19282F", color: "#A1B57D", position: "relative"};
     const backgroundImage = ""
 
     function handleScrollToSection(e){
@@ -81,17 +81,17 @@ function Home(){
                                             </div>
                                             <span id="software-engineer" style={{textAlign: "center"}}>software engineer</span> 
                                         </div>
-
-                                        
                                     </div>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
-                </Container>        
+                    {/* Profile Pic */}
+                </Container>   
+                <img id="profile-pic" src={require("./Images/SemiProfessionalPic.jpg")} alt="Yannik"/>     
             </Jumbotron>
 
-            <div className="recent-projects">
+            <article className="recent-projects">
                 <h2>Recent Projects</h2>
                 <Container>
                     <Row>
@@ -99,13 +99,11 @@ function Home(){
                             <h2 id="first-proj-label">Cuisto (in progress)</h2>
                         </Col>
                         <Col className="recent-project" id="second-recent-project" sm={12} md={6}>
-                            <div>
-
-                            </div>
+                            <h2 id="second-proj-label">Cuisto (in progress)</h2>
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </article>
 
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">
