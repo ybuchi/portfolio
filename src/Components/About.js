@@ -14,7 +14,7 @@ function About(){
     return(
         <>
         <Jumbotron>
-            <h1>About Page</h1>
+            <h1>About</h1>
             <p>{about.quote}</p>
         </Jumbotron>
 
@@ -56,8 +56,6 @@ function About(){
                 <p>I earned a new role as a data analystn through my hard work. Took more coding classes and discovered web development.</p>
             </div>
         </article>
-
-        
         </>
     )
 }
