@@ -162,7 +162,6 @@
 	 animation-iteration-count: infinite;
 }
 
-//Animatons for Home
 @-webkit-keyframes opacity {
     0%, 100% {
         opacity: 0;
