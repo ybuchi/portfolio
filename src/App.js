@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import { useState } from "react";
+import Nav from './Components/NavBar';
 import { Link } from "react-router-dom";
 import './App.css';
+import Sidebar from './Components/Sidebar';
 import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
 import { Outlet } from "react-router-dom"
-import Nav from './Components/NavBar';
-import Button from 'react-bootstrap/Button'
-import Offcanvas from 'react-bootstrap/Offcanvas'
+
 
 function App() {
   // State for sidebar
@@ -25,27 +26,9 @@ function App() {
 
       <div className="App">
         <NavBar show={show} setShow={setShow} handleShow={handleShow}/>
-
-        <Offcanvas show={show} onHide={handleClose}>
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title>
-              Yannik Büchi
-            </Offcanvas.Title>
-        </Offcanvas.Header>
-
-        <Offcanvas.Body>
-          <ul>
-            <li>
-              <Link to="/portfolio">All Portfolios</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </Offcanvas.Body>
-
-        </Offcanvas>
+        <Sidebar show={show} setShow={setShow} handleShow={handleShow} handleClose={handleClose}/>
         <Outlet />
+        <Footer/>
       </div>
       </>
   )
