@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { mission, work_tools, work } from "../Data/data";
 import "./Home.css";
 import "./Images/mountain.jpg"
