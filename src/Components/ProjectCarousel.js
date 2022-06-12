@@ -1,20 +1,29 @@
 import React from "react";
-import "./ProjectCarousel.css";
-import {Container, Col, Row} from "react-bootstrap"
+import { portfolio } from "../Data/data";
+import "./ProjectCard.css"
 
-function ProjectCarousel(){
+import Carousel from 'react-bootstrap/Carousel';
+
+
+function ProjectCarousel (){
+    const mappedPortfolio = portfolio.map((project)=>{
+        return (
+            <Carousel.Item key={project.id}>
+                <img  style={{width: "100%"}}src={require("./Images/Cuisto.png")} alt="moutain"/>
+                <Carousel.Caption>
+                    <h1>{project.project_name}</h1>
+                    <h2>{project.summary}</h2>
+                    <h3>{project.tools}</h3>
+                </Carousel.Caption>
+            </Carousel.Item>
+            )
+    })
+
+    
     return(
-        <Container className="project-card">
-            <Row className="project-header">
-                <h2>Project Name</h2>
-                <div className="project-image">
-
-                </div>
-            </Row>
-            <Row>
-                <p>Project Description</p>
-            </Row>
-        </Container>
+        <Carousel id="project-carousel">
+            {mappedPortfolio}
+        </Carousel>
         
     )
 }

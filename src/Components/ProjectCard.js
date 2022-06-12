@@ -1,26 +1,29 @@
 import React from "react";
-import { portfolio } from "../Data/data";
-import "./ProjectCard.css"
+import "./ProjectCarousel.css";
+import {Container, Col, Row} from "react-bootstrap"
+import { Button } from "react-bootstrap";
 
-import Carousel from 'react-bootstrap/Carousel';
+function ProjectCard({ project }){
+    console.log("project", project)
 
-function ProjectCard (){
-    const mappedPortfolio = portfolio.map((project)=>{
-        return (
-            <Carousel.Item key={project.id}>
-                <img  style={{width: "100%"}}src={require("./Images/mountain.jpg")} alt="moutain"/>
-                <Carousel.Caption>
-                    <h1>{project.project_name}</h1>
-                    <h2>{project.summary}</h2>
-                    <h3>{project.tools}</h3>
-                </Carousel.Caption>
-            </Carousel.Item>
-            )
-    })
     return(
-        <Carousel id="project-carousel">
-            {mappedPortfolio}
-        </Carousel>
+        <Col sm={12} md={4}>
+            <Container className="project-card">
+                <Row className="project-header">
+                    <h2>{project.project_name}</h2>
+                    <img src={require(`${project.image}`)} alt="project"/>
+                </Row>
+                <Row>
+                    <p>
+                        {project.description}
+                    </p>
+                    
+                    
+                </Row>
+                <Button variant="success">View Deployed App</Button>
+                <Button variant="secondary">GitHub</Button>
+            </Container>
+        </Col>
         
     )
 }

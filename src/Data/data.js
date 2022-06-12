@@ -34,17 +34,17 @@ const about = {
 const portfolio = [
 
     {
-        project_name : "Project 1",
-        image: "placeholder image",
-        description: "This is a description of Project 1.",
-        summary: "This is a summary of Project 1.",
-        tools: ["React", "JavaScript", "Ruby", "something else"],
-        project_url: "sampleURL",
+        project_name : "Cuisto",
+        image: "./Images/Cuisto.png",
+        description: "Upskill your cooking with Cuisto, the best app for home cooks! This app allows you to track ingredients in your fridge and pantry and immediately recommends recipes to cooked based on what you have. In addition, create, share, and browse recipes!",
+        summary: "Upskill your cooking with Cuisto, the best app for home cooks! This app allows you to track ingredients in your fridge and pantry and immediately recommends recipes to cooked based on what you have. In addition, create, share, and browse recipes!",
+        tools: ["Javascript", "React", "Ruby", "Rails", "Postgres"],
+        project_url: "https://cuisto.herokuapp.com/",
         id: 1
     },
     {
-        project_name : "Project 2",
-        image: "placeholder image",
+        project_name : "Napp",
+        image: "./Images/Cuisto.png",
         description: "This is a description of Project 2.",
         summary: "This is a summary of Project 2.",
         tools: ["React", "JavaScript", "Ruby", "something else"],
@@ -53,7 +53,7 @@ const portfolio = [
     },
     {
         project_name : "Project 3",
-        image: "placeholder image",
+        image: "./Images/Cuisto.png",
         description: "This is a description of Project 2.",
         summary: "This is a summary of Project 3.",
         tools: ["React", "JavaScript", "Ruby", "something else"],
@@ -62,7 +62,7 @@ const portfolio = [
     },
     {
         project_name : "Project 4",
-        image: "placeholder image",
+        image: "./Images/Cuisto.png",
         description: "This is a description of Project 2.",
         summary: "This is a summary of Project 4.",
         tools: ["React", "JavaScript", "Ruby", "something else"],
