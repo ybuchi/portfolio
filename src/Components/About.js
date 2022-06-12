@@ -20,7 +20,7 @@ function About(){
             <p>{about.quote}</p>
         </Jumbotron>
 
-        <article id="about-personal" style={{textAlign: "left"}}>
+        <article className="about-article" id="about-personal" style={{textAlign: "left"}}>
             <Container>
                 <Row>
                     <Col sm={12} md={6}>
@@ -39,7 +39,7 @@ function About(){
             </Container> 
         </article>
 
-        <article id="about-educational" style={{textAlign: "left"}}>
+        <article className="about-article" id="about-educational" style={{textAlign: "left"}}>
             <Container>
                 <Row>
                     <Col sm={12} md={6}>
@@ -65,7 +65,7 @@ function About(){
             </Container>
         </article>
 
-        <article id="about-professional" style={{textAlign: "left"}}>
+        <article className="about-article" id="about-professional" style={{textAlign: "left"}}>
             <Container>
                 <Row>
                     <Col sm={12} md={6}> 
