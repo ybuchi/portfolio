@@ -20,7 +20,7 @@ function NavBar({ show, setShow, handleShow }){
             <nav style={{margin: "0px 0px", padding: "5px 0px"}}>
                 <ul id="navbar-list">
                     <li style={{display: "inline", marginRight: "20px"}}>
-                        <Link className="navbar-link" to="/home">Home</Link>
+                        <Link className="navbar-link" to="/">Home</Link>
                     </li>
                     <li style={{display: "inline"}}>
                         <Link className="navbar-link" to="/about">About</Link>
