@@ -109,7 +109,7 @@ function Home(){
                 <Container>
                     <Row>
                         <Col sm={12} md={6} id="mission-col-container" className="col-container">
-                            <h1 className="page-section-header" id="mission">Mission</h1>
+                            <h1 className="page-section-header" id="mission">Mission-Driven</h1>
                             <p className="page-text-p">{mission.paragraph}</p>
                             <p className="page-text-p">{mission.paragraph2}</p>
                             <p className="page-text-p">{mission.paragraph3}</p>
@@ -128,7 +128,7 @@ function Home(){
                             
                         </Col>
                         <Col sm={12} md={6} id="work-col-container" className="col-container">
-                            <h1 className="page-section-header" id="work">How I Work</h1>
+                            <h1 className="page-section-header" id="work">Curious & Ambitious</h1>
                             <p className="page-text-p">{work.paragraph1}</p>
                             <p className="page-text-p">{work.paragraph2}</p>
                             <p className="page-text-p">{work.paragraph3}</p>
@@ -142,7 +142,7 @@ function Home(){
                 <Container>
                     <Row>
                         <Col sm={12} md={6} id="tools-col-container" className="col-container">
-                            <h1 className="page-section-header" id="tools">Tools</h1>
+                            <h1 className="page-section-header" id="tools">Open-Minded Team Player</h1>
                             <p className="page-text-p">{work_tools.paragraph1}</p>
                             <p className="page-text-p">{work_tools.paragraph2}</p>
                             <p className="page-text-p">{work_tools.paragraph3}</p>
