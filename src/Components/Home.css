@@ -141,7 +141,11 @@
     margin: 25px 25px;
 }
 .page-text-q{
-    margin: 30px 30px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 25px;
     font-style: italic;
 }

@@ -110,10 +110,12 @@ function Home(){
                     <Row>
                         <Col sm={12} md={6} id="mission-col-container" className="col-container">
                             <h1 className="page-section-header" id="mission">Mission</h1>
-                            <h3 className="page-text-q">{mission.quote}</h3>
-                        </Col>
-                        <Col sm={12} md={6}>
                             <p className="page-text-p">{mission.paragraph}</p>
+                            <p className="page-text-p">{mission.paragraph2}</p>
+                            <p className="page-text-p">{mission.paragraph3}</p>
+                        </Col>
+                        <Col style={{position: "relative"}} sm={12} md={6}>
+                            <h3 className="page-text-q">{mission.quote}</h3>
                         </Col>
                     </Row>   
                 </Container> 
@@ -123,9 +125,10 @@ function Home(){
                 <Container>
                     <Row>
                         <Col sm={12} md={6}>
-                            <h1 className="page-section-header" id="work">Work</h1>
+                            
                         </Col>
                         <Col sm={12} md={6} id="work-col-container" className="col-container">
+                            <h1 className="page-section-header" id="work">Work</h1>
                             <p className="page-text-p">{work.paragraph1}</p>
                             <p className="page-text-p">{work.paragraph2}</p>
                             <p className="page-text-p">{work.paragraph3}</p>
@@ -140,11 +143,12 @@ function Home(){
                     <Row>
                         <Col sm={12} md={6} id="tools-col-container" className="col-container">
                             <h1 className="page-section-header" id="tools">Tools</h1>
-                        </Col>
-                        <Col sm={12} md={6}>
                             <p className="page-text-p">{work_tools.paragraph1}</p>
                             <p className="page-text-p">{work_tools.paragraph2}</p>
                             <p className="page-text-p">{work_tools.paragraph3}</p>
+                        </Col>
+                        <Col sm={12} md={6}>
+                            
                         </Col>
                     </Row>
                 </Container>

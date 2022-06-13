@@ -1,6 +1,8 @@
 const mission = {
-    quote: "My mission is to leverage my diverse background to relate and advance environmental/social issues using the limitless power of coding.",
-    paragraph: "As a programmer with an educational background in biology and french studies, I have spent a lot of time working in both the sciences and in the humanities, looking for innovative ways to support crucial initiatives related to the environment and society.",
+    quote: "Enabling mission-driven companies and individuals to reshape their experience and interaction with the physical world through the power of coding.",
+    paragraph: "As a programmer with a background in environmental biology and the humanities, I am particularly passionate about building tools to help people live their best physical, rather than digital, lives.",
+    paragraph2:"At ITHAKA, I helped democratize global access to academic journals, books and research reports by building, maintaining and automating key dashboards and reports to inform the development of new collections and Open Access programs.",
+    paragraph3:"I am currently building Cuisto, an application to help home cooks like myself optimize and upskill their cooking abilities!",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }
