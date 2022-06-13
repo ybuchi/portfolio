@@ -1,18 +1,18 @@
 const mission = {
-    quote: "Enabling mission-driven companies and individuals to reshape their experience and interaction with the physical world through the power of coding.",
-    paragraph: "As a programmer with a background in environmental biology and the humanities, I am particularly passionate about building tools to help people live their best physical, rather than digital, lives.",
-    paragraph2:"At ITHAKA, I helped democratize global access to academic journals, books and research reports by building, maintaining and automating key dashboards and reports to inform the development of new collections and Open Access programs.",
-    paragraph3:"I am currently building Cuisto, an application to help home cooks like myself optimize and upskill their cooking abilities!",
+    quote: "My mission? To enable mission-driven companies and individuals make a positive social and environmental impact through the power of coding.",
+    paragraph: "I strongly believe that programming's largest potential is to create tools that, similar to a Swiss army knife, can help make our physical (not digital) lives more pleasant, impactful, and meaningful.",
+    paragraph2: "As a result, I am passionate about working with companies and individuals who think outside the box and see technology as a complement rather than a replacement to people's daily lives.",
+    paragraph3:"So if you see your company or product as a Swiss army knife on a mission to help the (physical) world become a better place, I'd love to chat!",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }
 
 const work = {
     quote: "This is a paragraph I want to quote.",
-    paragraph1: "Throughout my professional career, I've had the opportunity to work in the life sciences, the humanities, in lower and higher education, data analytics, and software engineering.",
-    paragraph2: "My experiences in these different industries, while diverse and seemingly different, are actually all connected by my ambition to work to make a positive social impact through technology.",
-    paragraph3:"Working in the life sciences, data analytics and software engineering taught me about real-world problems suchas anthropogenic climate change that require modern approaches and solutions.",
-    paragraph4:"My stint working in the humanities and in education allowed me to actively understand and work to contribute to mending social inequalities that still pervade our society.",
+    paragraph1: "A largely self-driven individual, I began my career in tech by growing my self-taught knowledge of SQL and relational databases into full-blown programming skills in Python, JavaScript, Ruby, Rails, and more.",
+    paragraph2: "My curiosity and drive enabled me to grow into the role of Data Analyst, where I was able to fully immerse myself in the world of programming and ultimately discovered my passion for software engineering.",
+    paragraph3:"I've worked professionally with both technical stakeholders (software and data engineers) and non-technical stakeholders (finance, product, and marketing teams) as part of a fast-paced Agile team focused on delivering both short-term and long-term impact.",
+    paragraph4:"",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }

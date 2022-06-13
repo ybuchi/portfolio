@@ -128,7 +128,7 @@ function Home(){
                             
                         </Col>
                         <Col sm={12} md={6} id="work-col-container" className="col-container">
-                            <h1 className="page-section-header" id="work">Work</h1>
+                            <h1 className="page-section-header" id="work">How I Work</h1>
                             <p className="page-text-p">{work.paragraph1}</p>
                             <p className="page-text-p">{work.paragraph2}</p>
                             <p className="page-text-p">{work.paragraph3}</p>
