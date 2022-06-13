@@ -1,5 +1,5 @@
 const mission = {
-    quote: "My mission? To enable companies and individuals make a positive human and environmental impact through the power of coding.",
+    quote: "My mission? To enable companies and individuals make a positive human and environmental impact using the power of coding.",
     paragraph: "What does it even mean to be a mission-driven programmer?",
     paragraph2: "In this day and age, there is a lot of talk about the positives but especially the negative effects of technology on our lives, the environment, and society. I believe that if we see technology as a Swiss army knife --a tool that complements rather than completely overtakes our daily lives-- we can ensure a positive technological future paving the way to a sustainable, equitable, and happier planet.",
     paragraph3: "As a programmer, this means I get particularly excited about working with companies, people, and products that are constantly trying to push the needle on improving our personal, social and professional lives.",

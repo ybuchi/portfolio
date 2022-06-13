@@ -30,10 +30,10 @@ function Home(){
                             <Row>
                                 <Col md={12} style={{textAlign: "center"}}>
                                     <div>
-                                        <span>Hi! Bonjour! Grüezi!</span><br/>
-                                        <span id="my-name-is">I'm </span>
-                                        <span id="yannik">YANNIK, </span>
-                                        <span id="i-am-a">a(n) </span>
+                                        {/* <span className="greetings">Hi! Bonjour! Grüezi!</span><br/> */}
+                                        <span id="my-name-is">I'm </span><br/>
+                                        <span id="yannik">YANNIK, </span><br/>
+                                        <span id="i-am-a">a(n) </span><br/>
                                         <div id="adjectives" className="content" style={{textAlign: "center"}}>
                                             <div className="content_container">
                                                 <ul className="content__container__list">
@@ -51,7 +51,7 @@ function Home(){
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <span id="software-engineer" style={{textAlign: "center"}}>software engineer</span> 
+                                            <span id="software-engineer" style={{textAlign: "center", color: "#A1B57D"}}>Software Engineer</span> 
                                         </div>
                                     </div>
                                 </Col>
@@ -62,20 +62,21 @@ function Home(){
                 </Container>   
                 <img id="profile-pic" src={require("./Images/SemiProfessionalPic.jpg")} alt="Yannik"/>     
             </Jumbotron>
-
             <article className="recent-projects">
+                <hr/>
                 <h2>Recent Projects</h2>
                 <Container>
                     <Row>
                         <Col className="recent-project" id="first-recent-project" sm={12} md={6}>
-                            <h2 id="first-proj-label">Cuisto (in progress)</h2>
+                            {/* <h2 id="first-proj-label">Cuisto (in progress)</h2> */}
                         </Col>
                         <Col className="recent-project" id="second-recent-project" sm={12} md={6}>
-                            <h2 id="second-proj-label">Cuisto (in progress)</h2>
+                            {/* <h2 id="second-proj-label">Cuisto (in progress)</h2> */}
                         </Col>
                     </Row>
                 </Container>
             </article>
+            <hr/>
 
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">

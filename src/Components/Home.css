@@ -2,9 +2,13 @@
     height: 200px;
     border-radius: 50%;
     position: absolute;
-    bottom: -35%;
+    bottom: -25%;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    transition: box-shadow 1s ease;
+}
+#profile-pic:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .col-container{
     padding: 20px;
@@ -37,8 +41,8 @@
 #software-engineer{
     font-size: 30px;
 }
-#greetings{
-    fontSize:50px;
+.greetings{
+    font-size:50px;
 }
 #adjectives{
     font-size: 30px;
@@ -61,6 +65,11 @@
     border: black 1px solid;
     border-radius: 5px;
     position: relative;
+    transition: box-shadow 0.5s ease;
+}
+.recent-project:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
 }
 #first-proj-label{
     background-color:rgba(0,0,0,0.5);
