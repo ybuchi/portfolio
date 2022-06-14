@@ -3,3 +3,17 @@
     padding: 40px;
     margin: auto;
 }
+.project-card{
+    padding: 15px;
+}
+.project-logo{
+    width: 300px;
+    margin: auto;
+}
+.proj-link{
+    text-decoration: none;
+    color: black;
+}
+.proj-link:hover{
+    cursor: pointer;
+}
