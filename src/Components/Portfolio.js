@@ -19,7 +19,8 @@ function Portfolio(){
     
         <>
         <Container id="portfolio">
-            <h1>Portfolio</h1>
+            <h1 id="portfolio-title">My Portfolio</h1>
+            <h4>Check out my past and current projects!</h4>
             <Row>
                 <ProjectCarousel />
             </Row>
