@@ -36,7 +36,7 @@ function Footer(){
                         <figcaption className="footer-list-title">Recent Projects</figcaption>
                         <ul className="footer-list">
                             <li><a className="footer-link" href="https://cuisto.herokuapp.com/"><strong style={{fontStyle: "italic"}}>Cuisto</strong> - the Best App for Home Cooks!</a></li>
-                            <li><a className="footer-link" href="https://gorgeous-empanada-210319.netlify.app/"><strong style={{fontStyle: "italic"}}>NApp</strong> - Study for the American Naturalization Exam</a></li>
+                            <li><a className="footer-link" href="https://gorgeous-empanada-210319.netlify.app/"><strong style={{fontStyle: "italic"}}>Ellis</strong> - Study for the American Naturalization Exam</a></li>
                         </ul>
                     </figure>
                 </Col>
