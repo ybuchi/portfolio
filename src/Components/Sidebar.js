@@ -23,9 +23,9 @@ function Sidebar({ show, handleClose }){
                     <figure>
                         <figcaption className="sidebar-list-title">Navigation</figcaption>
                             <ul className="sidebar-list">
-                                <li>Home</li>
-                                <li>Portfolio</li>
-                                <li>About</li>
+                                <li><Link className="sidebar-link" to="/">Home</Link></li>
+                                <li><Link className="sidebar-link" to="portfolio">Portfolio</Link></li>
+                                <li><Link className="sidebar-link" to="about">About</Link></li>
                             </ul>
                     </figure>
                 </Col>
@@ -33,8 +33,8 @@ function Sidebar({ show, handleClose }){
                     <figure>
                         <figcaption className="sidebar-list-title">Social Media Links</figcaption>
                         <ul className="footer-list">
-                            <li>Github</li>
-                            <li>LinkedIn</li>
+                            <li><a className="sidebar-link" href="https://github.com/ybuchi" target="_blank" rel="noreferrer">Github</a></li>
+                            <li><a className="sidebar-link" href="https://www.linkedin.com/in/yannikbuchi/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                         </ul>
                     </figure>
                 </Col>
@@ -42,9 +42,8 @@ function Sidebar({ show, handleClose }){
                     <figure>
                         <figcaption className="sidebar-list-title">Recent Projects</figcaption>
                         <ul className="footer-list">
-                            <li>Project 1</li>
-                            <li>Project 2</li>
-                            <li>Project 3</li>
+                            <li><a className="sidebar-link" href="https://cuisto.herokuapp.com" target="_blank" rel="noreferrer">Cuisto</a></li>
+                            <li><a className="sidebar-link" href="https://gorgeous-empanada-210319.netlify.app/">Ellis</a></li>
                         </ul>
                     </figure>
                 </Col>
