@@ -17,7 +17,6 @@ function About(){
         <>
         <Jumbotron>
             <h1>About</h1>
-            <p>{about.quote}</p>
         </Jumbotron>
 
         <article className="about-article" id="about-personal" style={{textAlign: "left"}}>

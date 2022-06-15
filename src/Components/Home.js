@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 
 function Home(){
 
-    const jumboStyle = {backgroundColor: "#19282F", color: "#A1B57D", position: "relative"};
+    const jumboStyle = {backgroundColor: "#19282F", color: "white", position: "relative", paddingTop: "50px"};
     const backgroundImage = ""
 
     function handleScrollToSection(e){
@@ -23,7 +23,7 @@ function Home(){
         <>
         {/* <img id="logo" src={require("./Images/logo_cropped.png")} alt="Yannik's logo" />*/}
 
-            <Jumbotron jumboStyle={jumboStyle} backgroundImage={backgroundImage}>
+            <Jumbotron id="home-jumbo" jumboStyle={jumboStyle} backgroundImage={backgroundImage}>
                 <Container>
                     <Row>
                         <Col>
@@ -31,27 +31,27 @@ function Home(){
                                 <Col md={12} style={{textAlign: "center"}}>
                                     <div>
                                         {/* <span className="greetings">Hi! Bonjour! Grüezi!</span><br/> */}
-                                        <span id="my-name-is">I'm </span><br/>
-                                        <span id="yannik">YANNIK, </span><br/>
-                                        <span id="i-am-a">a(n) </span><br/>
+                                        {/* <span id="my-name-is">I'm </span><br/> */}
+                                        <span id="yannik">YANNIK BÜCHI</span><br/>
+                                        {/* <span id="i-am-a">a </span><br/> */}
                                         <div id="adjectives" className="content" style={{textAlign: "center"}}>
                                             <div className="content_container">
                                                 <ul className="content__container__list">
-                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
-                                                        mission-driven
+                                                    <li className="content__container__list__item" style={{color: "lightblue", fontSize: "40px"}}>
+                                                        Mission-driven
                                                     </li>
-                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
-                                                        data-driven
+                                                    <li className="content__container__list__item" style={{color: "lightblue", fontSize: "40px"}}>
+                                                        Bilingual
                                                     </li>
-                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
-                                                        chocolate-driven
+                                                    <li className="content__container__list__item" style={{color: "lightblue", fontSize: "40px"}}>
+                                                        Fullstack
                                                     </li>
-                                                    <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
-                                                        fullstack
+                                                    <li className="content__container__list__item" style={{color: "lightblue", fontSize: "40px"}}>
+                                                        Chocolate-loving
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <span id="software-engineer" style={{textAlign: "center", color: "#A1B57D"}}>Software Engineer</span> 
+                                            <span id="software-engineer" style={{textAlign: "center", color: "white"}}>Software Engineer</span> 
                                         </div>
                                     </div>
                                 </Col>
