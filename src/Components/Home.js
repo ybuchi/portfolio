@@ -41,13 +41,13 @@ function Home(){
                                                         mission-driven
                                                     </li>
                                                     <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
-                                                        environmental
+                                                        data-driven
                                                     </li>
                                                     <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
-                                                        full-stack
+                                                        chocolate-driven
                                                     </li>
                                                     <li className="content__container__list__item" style={{color: "#B33030", fontSize: "40px"}}>
-                                                        really cool
+                                                        fullstack
                                                     </li>
                                                 </ul>
                                             </div>
@@ -63,7 +63,7 @@ function Home(){
                 <img id="profile-pic" src={require("./Images/SemiProfessionalPic.jpg")} alt="Yannik"/>     
             </Jumbotron>
             <article className="recent-projects">
-                <hr/>
+
                 <h2>Recent Projects</h2>
                 <Container>
                     <Row>
@@ -75,8 +75,13 @@ function Home(){
                         </Col>
                     </Row>
                 </Container>
+                <Button className="page-nav-btn" 
+                        variant="light"
+                        value="All Projects"
+                        onClick={handleScrollToSection}>
+                        Go to Portfolio
+                </Button>
             </article>
-            <hr/>
 
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">
@@ -98,12 +103,7 @@ function Home(){
                         onClick={handleScrollToSection}>
                         Tools
                 </Button>
-                <Button className="page-nav-btn" 
-                        variant="light"
-                        value="All Projects"
-                        onClick={handleScrollToSection}>
-                        All Projects
-                </Button>
+                
             </div>
             
             <div className="page-text-container">
