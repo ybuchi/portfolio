@@ -46,9 +46,9 @@ const portfolio = [
         id: 1
     },
     {
-        project_name : "Napp",
-        image: "./Images/Cuisto.png",
-        description: "This is a description of Project 2.",
+        project_name : "Ellis",
+        image: "./Images/NApp.png",
+        description: "Are you in the process of getting your US citizenship? This app gives you the tools you need to study and ace the civics portion of the interview.",
         summary: "This is a summary of Project 2.",
         tools: ["React", "JavaScript", "Ruby", "something else"],
         project_url: "https://gorgeous-empanada-210319.netlify.app/",
