@@ -5,3 +5,19 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+#about-jumbo{
+    background-image: url("./Images/ch_bg.jpeg");
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+    positon: relative;
+}
+#about-jumbo h1{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; 
+    font-size: 100px;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+}

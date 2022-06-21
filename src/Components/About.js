@@ -15,7 +15,7 @@ function About(){
 
     return(
         <>
-        <Jumbotron>
+        <Jumbotron id="about-jumbo">
             <h1>About</h1>
         </Jumbotron>
 
@@ -23,16 +23,24 @@ function About(){
             <Container>
                 <Row>
                     <Col sm={12} md={6}>
-                        <img className="country-logo" src={require("./Images/Colombia.png")} alt="Colombia"></img>
-                        <img className="country-logo" src={require("./Images/Switzerland.png")} alt="Colombia"></img>
-                        <img className="country-logo" src={require("./Images/USA.png")} alt="Colombia"></img>
+                        <div style={{textAlign: "left"}}>
+                            <img className="country-logo" src={require("./Images/Colombia.png")} alt="Colombia"></img>
+                        </div>
+                        <div style={{textAlign: "center"}}>
+                            <img className="country-logo" src={require("./Images/Switzerland.png")} alt="Colombia"></img>
+                        </div>
+                        <div style={{textAlign: "right"}}>
+                            <img className="country-logo" src={require("./Images/USA.png")} alt="Colombia"></img>
+                        </div>
                     </Col>
                     <Col sm={12} md={6}>
                         <h1>Personal Background</h1>
-                        <p>Hi, I'm Yannik! I was born in Bogotá, Colombia, lived in Vaud, Switzerland for a few years before moving to New York where I have spent most of my life (currently based in Astoria, Queens).</p>
-                        <p>Exploring and connecting with new languages and cultures has always been an important part of my life, especially growing up in a Swiss-German household, attending a French school, and living in the diverse state of New York.
-                        I undoubtedly get my obsession for moutains, snow, skiing, and hiking from my Swiss side. My flamboyance, energy, and love for music can likely be attributed to my Colombian side, and my passion and unrelenting drive come from my American side (I'm a new US citizen!). As such, I particularly thrive in cross-cultural, open-minded environments.
-                        </p>
+                        <p>Hi! I'm Yannik!</p>
+                        <p>I was born in Bogotá, Colombia and adopted into a Swiss family soon after. Unfortunately, this did not leave me with enough time to learn and retain any Spanish. </p>
+                        <p>Our family immigrated to Westchester, New York in 1997, where I grew up as part of the francophone expatriate community of the area.</p>
+                        <p>Our strong ties to our Swiss family roots in Vaud and Zürich meant living and thriving in a multilingual household speaking French, Swiss-German and English.</p>
+                        <p>Perhaps unsurprisingly, my favorite activities include hiking, skiing, snowboarding... I guess you could say that simply being in the mountains makes me happy.</p>
+                        <p>Playing and listening to music are also part of my favorite passtimes. I've been playing the piano since the age of 7, and have recently picked up the guitar.</p>
                     </Col>
                 </Row>
             </Container> 
@@ -44,19 +52,29 @@ function About(){
                     <Col sm={12} md={6}>
                         <h1> Educational Background </h1>
                         <div className="education-container">
-                            <p>I possess a bilingual high school diploma in French and English with an additional diploma of the French Baccalaureate.</p>
+                            <p>I spent grades K-12 at the French-American School of New York, a bilingual school, from which I graduated with an American high school diploma as well as with a diploma of the French of Baccalaureate.</p>
                         </div>
                         <div className="education-container">
-                            <p>I received a Bachelor of the Arts degree with a double-major in Biology and French Studies from Colby College.</p>
+                            <p>After high school, my interest in environmental biology and my strong desire to keep in touch with my francophone roots led me to complete a Bachelor of Arts degree at Colby College in Waterville, Maine with a double major in Biology and French Studies. </p>
+                            <p>I didn't know it at time, but studying biology exposed me to to my first programming experience that ultimately led to my transition into Software Engineering.</p>
                         </div>
                         <div className="education-container">
-                            <p>I attended and completed the Flatiron School 15 week full-time and in-person coding bootcamp.</p>
+                            <p>Following my keen interest in leveraging technology to create a positive social and environmental impact, I grew initially self-taught skills and curiosity in programming into a data analyst role (see professional experience), and subsequently enrolled in a 15-week full-time fulltstack engineering bootcamp at Flatiron School.</p>
                         </div>
                     </Col>
                     <Col sm={12} md={6}>
-                        <img className="country-logo" src={require("./Images/FASNY-logo.jpg")} alt="FASNY"/>
-                        <img className="country-logo" src={require("./Images/colby-college-logo.png")} alt="FASNY"/>
-                        <img className="country-logo" src={require("./Images/Flatiron.png")} alt="FASNY"/>
+                        <div style={{textAlign: "center"}}>
+                            <img className="country-logo" src={require("./Images/FASNY-logo.jpg")} alt="FASNY"/>
+                        </div>
+                        <br/>
+                        <div style={{textAlign: "center"}}>
+                            <img className="country-logo" src={require("./Images/colby-college-logo.png")} alt="FASNY"/>
+                        </div>
+
+                        <br/>
+                        <div style={{textAlign: "center"}}>
+                            <img className="country-logo" src={require("./Images/Flatiron.png")} alt="FASNY"/>
+                        </div>
 
 
                     </Col>
@@ -68,21 +86,29 @@ function About(){
             <Container>
                 <Row>
                     <Col sm={12} md={6}> 
-                        <img className="country-logo" src={require("./Images/ithaka.png")} alt="ITHAKA"/>
-                        <img className="country-logo" src={require("./Images/SA.png")} alt="Success Academy Charter Schools"/>
-
+                        <div style={{textAlign: "right"}}>
+                            <img className="country-logo" src={require("./Images/ithaka.png")} alt="ITHAKA"/>
+                        </div>
+                        <div style={{textAlign: "center"}}>
+                            <img className="country-logo" src={require("./Images/SA.png")} alt="Success Academy Charter Schools"/>
+                        </div>
                     </Col>
                     <Col sm={12} md={6}>
                         <h1> Professional Background </h1>
-                        <p className="summary">A summary here. Explain how you got to software engineering.</p>
                         <div className="professional-container">
-                            <p>I started of at SA Charter Schools. </p>
+                            <p>After graduating from college, I looked for ways in which I could use the data analysis and programming experience I had acquired as a biology major to land a position in which I could grow my technical skills.</p>
                         </div>
                         <div className="education-container">
-                            <p>I then worked at ITHAKA where I began self-teaching myself code.</p>
+                            <p>As an Education Coordinator at Success Academy Charter Schools, I compiled, managed, and analyzed student data to assist teachers in monitoring student performance and advocating for appropriate Special Education programs.</p>
                         </div>
                         <div className="education-container">
-                            <p>I earned a new role as a data analystn through my hard work. Took more coding classes and discovered web development.</p>
+                            <p>While I gained a lot of experience collaborating with various kinds of stakeholders from parents to teachers and DOE representatives, I left SA Charter Schools for ITHAKA, a leader in academic publishing and research, where I initially worked as part of the Content Development team. </p>
+                        </div>
+                        <div className="education-container">
+                            <p>As a Publisher Support Associate, I began teaching myself SQL, report automation and data visualization in Tableau, and quickly grew into a data consultant role, supporting external stakeholders such as academic publishers, libraries and consortiums with the data, tools and reports to make data-driven decisions about the content they wanted to include on the ITHAKA's JSTOR platform.</p>
+                        </div>
+                        <div className="education-container">
+                            <p>My drive and success as Publisher Associate enabled me to grow into the position of data analyst in the organization's brand new Business Intelligence Team. There, I grew and thrived as a part of a fast-paced Agile team.</p>
                         </div>
                     </Col>
                 </Row>
