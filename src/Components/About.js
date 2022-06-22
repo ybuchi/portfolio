@@ -48,7 +48,7 @@ function About(){
                 </Row>
 
                 <Row>
-                    <Col sm={12} md={6}>
+                    <Col sm={12} md={4}>
                         <div id="bogota" className="country-img">
                         </div>
                         <div id="levaud" className="country-img">
@@ -58,7 +58,7 @@ function About(){
                         <div id="queens" className="country-img">
                         </div>
                     </Col>
-                    <Col sm={12} md={6}>
+                    <Col sm={12} md={8}>
                         <p>Hi! I'm Yannik!</p>
                         <p>I'm a Swiss-American programmer originally from Vaud, Switzerland and currently based in Queens, New York.</p>
                         <p>Our strong ties to our Swiss family roots in Vaud and Zürich meant living and thriving in a multilingual household speaking French, Swiss-German and English.</p>
@@ -75,7 +75,7 @@ function About(){
                     <h1> Educational Background </h1>
                 </Row>
                 <Row>
-                    <Col sm={12} md={6}>
+                    <Col sm={12} md={8}>
                         
                         <div className="education-container">
                             <p className="language-label"><strong>French-American School of New York</strong></p>
@@ -90,7 +90,7 @@ function About(){
                             <p>Software Engineering Bootcamp : JavaScript, React and Ruby-on-Rails</p>
                         </div>
                     </Col>
-                    <Col sm={12} md={6}>
+                    <Col sm={12} md={4}>
                         <h3 style={{textAlign: "center"}}>Languages</h3>
                         <p className="language-label">French (Native Speaker)</p>
                         <div className="language-bar">
@@ -134,7 +134,8 @@ function About(){
                     </Col>
                     <Col sm={12} md={6}>
                         <div className="education-container">
-                            <p><strong>Education Coordinator - Success Academy Charter Schools</strong></p>
+                            <p className="language-label"><strong>Education Coordinator</strong></p>
+                            <p>Success Academy Charter Schools</p>
                         </div>
                     </Col>
                 </Row>
@@ -144,7 +145,8 @@ function About(){
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p><strong>Publisher Support Associate, Content Development - ITHAKA</strong></p>
+                            <p className="language-label"><strong>Publisher Support Associate, Content Development</strong></p>
+                            <p>ITHAKA</p>
                         </div>
                     </Col>
                 </Row>
@@ -154,13 +156,14 @@ function About(){
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p><strong>Data Analyst, Business Intelligence - ITHAKA</strong></p>
+                            <p className="language-label"><strong>Data Analyst, Business Intelligence</strong></p>
+                            <p>ITHAKA</p>
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        JavaScript, Python, HTML, CSS, React, Node.js, MongoDB, SQL, Ruby, Rails
+                        JavaScript, Python, HTML, CSS, React, Node.js, MongoDB, SQL, Express, Ruby, Rails
                     </Col>
                     <Col>
                         <div className="education-container">

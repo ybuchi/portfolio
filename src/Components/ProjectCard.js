@@ -11,11 +11,12 @@ function ProjectCard({ project }){
     return(
         <Col sm={12} md={6}>
             <Container className="project-card">
-                <Row>
-                    <Col sm={6} style={{textAlign: "left"}}>
+                <Row style={{backgroundColor: "lightgray", padding: "10px", borderRadius: "5px"}}>
+                    <Col sm={4} style={{textAlign: "left"}}>
                         <a href={project.github_url} target="_blank" rel="noreferrer"><Github size={35} className="proj-link" /></a>
                     </Col>
-                    <Col style={{textAlign: "right"}} sm={6}>
+                    <Col style={{textAlign: "center"}} sm={4}><h1>{project.project_name}</h1></Col>
+                    <Col style={{textAlign: "right"}} sm={4}>
                         <a href={project.project_url} target="_blank" rel="noreferrer"><BoxArrowUpRight size={30} className="proj-link"/></a>
                     </Col>
                 </Row>
@@ -23,7 +24,6 @@ function ProjectCard({ project }){
                     <img className="project-logo" src={require(`${project.image}`)} alt="project"/>
                 </Row>
                 <Row>
-                    <h2>{project.project_name}</h2>
                     <p>
                         {project.description}
                     </p>

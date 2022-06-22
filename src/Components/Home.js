@@ -1,6 +1,7 @@
 import React from "react";
 import { mission, work_tools, work } from "../Data/data";
 import "./Home.css";
+import { Link } from "react-router-dom";
 import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
 import Button from 'react-bootstrap/Button';
@@ -78,8 +79,8 @@ function Home(){
                 <Button className="page-nav-btn" 
                         variant="light"
                         value="All Projects"
-                        onClick={handleScrollToSection}>
-                        Go to Portfolio
+                        >
+                        <Link to="/portfolio">Go to Portfolio</Link>
                 </Button>
             </article>
 
@@ -89,19 +90,19 @@ function Home(){
                         variant="light"
                         value="mission"
                         onClick={handleScrollToSection}>
-                        Mission
+                        Mission-Driven
                 </Button>
                 <Button className="page-nav-btn" 
                         variant="light"
                         value="work"
                         onClick={handleScrollToSection}>
-                        Work
+                        Curious and Ambitious
                 </Button>
                 <Button className="page-nav-btn" 
                         variant="light"
                         value="tools"
                         onClick={handleScrollToSection}>
-                        Tools
+                        Open-Minded
                 </Button>
                 
             </div>
