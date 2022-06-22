@@ -5,6 +5,21 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+#fasny-img{
+    width: 60px;
+}
+#colby-img{
+    width: 100px;
+}
+#flatiron-img{
+    width: 120px;
+}
+.education-row{
+    margin-bottom: 20px;
+}
+.section-container{
+    margin-bottom: 80px;
+}
 #about-jumbo{
     /* background-image: url("./Images/ch_bg.jpeg"); */
     background-position: top;
@@ -69,4 +84,20 @@
     height:30px;
     background-color: orange;
     border-radius: 3px;
+}
+.highlight-box{
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.excel-img{
+    height: 35px;
+    margin-right: 25px;
+}
+.odd-row{
+    background-color: lightgray;
+}
+.skill{
+    padding: 15px;
 }

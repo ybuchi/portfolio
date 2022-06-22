@@ -43,7 +43,7 @@ function About(){
             <Container>
                 <Row>
                     <Col>
-                        <h1 style={{textAlign: "right"}}>Personal Background</h1>
+                        <h1  className="section-container" style={{textAlign: "right"}}>Personal Background</h1>
                     </Col>
                 </Row>
 
@@ -58,12 +58,15 @@ function About(){
                         <div id="queens" className="country-img">
                         </div>
                     </Col>
-                    <Col sm={12} md={8}>
-                        <p>Hi! I'm Yannik!</p>
-                        <p>I'm a Swiss-American programmer originally from Vaud, Switzerland and currently based in Queens, New York.</p>
-                        <p>Our strong ties to our Swiss family roots in Vaud and Zürich meant living and thriving in a multilingual household speaking French, Swiss-German and English.</p>
-                        <p>Perhaps unsurprisingly, my favorite activities include hiking, skiing, snowboarding... I guess you could say that simply being in the mountains makes me happy.</p>
-                        <p>Playing and listening to music are also part of my favorite passtimes. I've been playing the piano since the age of 7, and have recently picked up the guitar.</p>
+                    <Col className="relative" sm={12} md={8}>
+                        <div id="about-txt">
+                            <p>Hi! I'm Yannik!</p>
+                            <p>I'm a Swiss-American programmer originally from Vaud, Switzerland and currently based in Queens, New York.</p>
+                            <p>Our strong ties to our Swiss family roots in Vaud and Zürich meant living and thriving in a multilingual household speaking French, Swiss-German and English.</p>
+                            <p>Perhaps unsurprisingly, my favorite activities include hiking, skiing, snowboarding... I guess you could say that simply being in the mountains makes me happy.</p>
+                            <p>Playing and listening to music are also part of my favorite passtimes. I've been playing the piano since the age of 7, and have recently picked up the guitar.</p>
+                        </div>
+                        
                     </Col>
                 </Row>
             </Container> 
@@ -72,25 +75,45 @@ function About(){
         <article className="about-article" id="about-educational" style={{textAlign: "left"}}>
             <Container>
                 <Row>
-                    <h1> Educational Background </h1>
+                    <h1 className="section-container"> Educational Background </h1>
                 </Row>
                 <Row>
                     <Col sm={12} md={8}>
                         
                         <div className="education-container">
-                            <p className="language-label"><strong>French-American School of New York</strong></p>
-                            <p>High School Diploma and Diploma of the French Baccalaureate</p>
-                        </div>
-                        <div className="education-container">
-                            <p className="language-label"><strong>Colby College</strong></p>
-                            <p>Bachelor of the Arts : Biology and French Studies double major</p>
-                        </div>
-                        <div className="education-container">
-                            <p className="language-label"><strong>Flatiron School</strong></p>
-                            <p>Software Engineering Bootcamp : JavaScript, React and Ruby-on-Rails</p>
+                            <Container>
+                                <Row className="education-row">
+                                    <Col sm={2}>
+                                        <img id="fasny-img" src={require("./Images/FASNY-logo.jpg")} alt="french-american school of new york"/>
+                                    </Col>
+                                    <Col sm={10}>
+                                        <p className="language-label"><strong>French-American School of New York</strong></p>
+                                        <p>High School Diploma and Diploma of the French Baccalaureate</p>
+                                    </Col>
+                                </Row>
+                                <Row className="education-row">
+                                    <Col sm={2}>
+                                        <img id="colby-img" src={require("./Images/colby-college-logo.png")} alt="colby college"/>
+                                    </Col>
+                                    <Col sm={10}>
+                                        <p className="language-label"><strong>Colby College</strong></p>
+                                        <p>Bachelor of the Arts : Biology and French Studies double major</p>
+                                    </Col>
+                                </Row>
+                                <Row className="education-row">
+                                    <Col sm={2}>
+                                        <img id="flatiron-img" src={require("./Images/Flatiron.png")} alt="flatiron school"/>
+                                    </Col>
+                                    <Col sm={10}>
+                                        <p className="language-label"><strong>Flatiron School</strong></p>
+                                        <p>Software Engineering Bootcamp - JavaScript, React and Ruby-on-Rails</p>
+                                    </Col>
+                                </Row>
+
+                            </Container>
                         </div>
                     </Col>
-                    <Col sm={12} md={4}>
+                    <Col sm={12} md={4} className="highlight-box">
                         <h3 style={{textAlign: "center"}}>Languages</h3>
                         <p className="language-label">French (Native Speaker)</p>
                         <div className="language-bar">
@@ -107,19 +130,6 @@ function About(){
                             <div id="german" style={{width: "70%"}}>
                             </div>
                         </div>
-
-                        {/* <div style={{textAlign: "center"}}>
-                            <img className="country-logo" src={require("./Images/FASNY-logo.jpg")} alt="FASNY"/>
-                        </div>
-                        <br/>
-                        <div style={{textAlign: "center"}}>
-                            <img className="country-logo" src={require("./Images/colby-college-logo.png")} alt="FASNY"/>
-                        </div>
-
-                        <br/>
-                        <div style={{textAlign: "center"}}>
-                            <img className="country-logo" src={require("./Images/Flatiron.png")} alt="FASNY"/>
-                        </div> */}
                     </Col>
                 </Row>
             </Container>
@@ -127,32 +137,32 @@ function About(){
 
         <article className="about-article" id="about-professional" style={{textAlign: "left"}}>
             <Container>
-                <h1 style={{textAlign: "right"}}> Professional Background</h1>
-                <Row>
+                <h1  className="section-container" style={{textAlign: "right"}}> Professional Background</h1>
+                <Row className="skill odd-row">
                     <Col>
-                        Excel
-                    </Col>
-                    <Col sm={12} md={6}>
-                        <div className="education-container">
-                            <p className="language-label"><strong>Education Coordinator</strong></p>
-                            <p>Success Academy Charter Schools</p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        Excel, SQL, Tableau, JasperReports, Redshift
+                        <img className="excel-img" src={require("./Images/sql.png")} alt="sql"/>
+                        <img className="excel-img" src={require("./Images/javascript.png")} alt="javascript"/>
+                        <img className="excel-img" src={require("./Images/html.png")} alt="html"/>
+                        <img className="excel-img" src={require("./Images/css.png")} alt="css"/>
+                        <img className="excel-img" src={require("./Images/react.png")} alt="react"/>
+                        <img className="excel-img" src={require("./Images/ruby.png")} alt="ruby"/>
+                        <img className="excel-img" src={require("./Images/rails.png")} alt="rails"/>
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p className="language-label"><strong>Publisher Support Associate, Content Development</strong></p>
-                            <p>ITHAKA</p>
+                            <p className="language-label"><strong>Software Engineer</strong></p>
                         </div>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="skill">
                     <Col>
-                        Excel, SQL, Tableau, JasperReports, Python, Databricks, Redshift, Apache Hive
+                        <img className="excel-img" src={require("./Images/excel.png")} alt="excel"/>
+                        <img className="excel-img" src={require("./Images/sql.png")} alt="sql"/>
+                        <img className="excel-img" src={require("./Images/tableau.png")} alt="tableau"/>
+                        <img className="excel-img" src={require("./Images/jasper.png")} alt="jasper"/>
+                        <img className="excel-img" src={require("./Images/databricks.png")} alt="databricks"/>
+                        <img className="excel-img" src={require("./Images/python.png")} alt="python"/>
+
                     </Col>
                     <Col>
                         <div className="education-container">
@@ -161,19 +171,32 @@ function About(){
                         </div>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="odd-row skill">
                     <Col>
-                        JavaScript, Python, HTML, CSS, React, Node.js, MongoDB, SQL, Express, Ruby, Rails
+                        <img className="excel-img" src={require("./Images/excel.png")} alt="excel"/>
+                        <img className="excel-img" src={require("./Images/sql.png")} alt="sql"/>
+                        <img className="excel-img" src={require("./Images/tableau.png")} alt="tableau"/>
+                        <img className="excel-img" src={require("./Images/jasper.png")} alt="jasper"/>
+
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p><strong>Software Engineer</strong></p>
+                            <p className="language-label"><strong>Publisher Support Associate, Content Development</strong></p>
+                            <p>ITHAKA</p>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className="skill">
+                    <Col>
+                        <img className="excel-img" src={require("./Images/excel.png")} alt="excel"/>
+                    </Col>
+                    <Col>
+                        <div className="education-container">
+                            <p><strong>Education Coordinator</strong></p>
                         </div>
                     </Col>
                 </Row>
             </Container>
-
-            
         </article>
         </>
     )
