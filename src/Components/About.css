@@ -6,18 +6,67 @@
     margin-bottom: 40px;
 }
 #about-jumbo{
-    background-image: url("./Images/ch_bg.jpeg");
+    /* background-image: url("./Images/ch_bg.jpeg"); */
     background-position: top;
     background-size: cover;
-    height: 400px;
+    height: 300px;
     positon: relative;
+    border-bottom: 3px black solid;
 }
 #about-jumbo h1{
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute; 
     font-size: 100px;
-    color: white;
+    /* color: white; */
     font-family: 'Chakra Petch', sans-serif;
+}
+#levaud{
+    background-image: url('./Images/levaud.jpeg');
+    background-size: cover;
+    background-position: top -50px right;
+}
+#rye{
+    background-image: url('./Images/rye.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#queens{
+    background-image: url('./Images/astoria.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#bogota{
+    background-image: url('./Images/bogota.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.country-img{
+    height: 60px;
+    margin-bottom: 30px;
+}
+.language-bar{
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+.language-label{
+    margin-bottom: 0px;
+}
+#french{
+    height:30px;
+    background-color: lightblue;
+    border-radius: 3px;
+}
+#english{
+    height:30px;
+    background-color: maroon;
+    border-radius: 3px;
+}
+#german{
+    height:30px;
+    background-color: orange;
+    border-radius: 3px;
 }
