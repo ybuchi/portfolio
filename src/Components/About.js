@@ -138,6 +138,8 @@ function About(){
         <article className="about-article" id="about-professional" style={{textAlign: "left"}}>
             <Container>
                 <h1  className="section-container" style={{textAlign: "right"}}> Professional Background</h1>
+                <p>While I come from a non-traditional background in computer science, I've worked hard to learn and pick up new tools and technologies to constantly improve my programming skills.</p>
+
                 <Row className="skill odd-row">
                     <Col>
                         <img className="excel-img" src={require("./Images/sql.png")} alt="sql"/>
@@ -150,7 +152,7 @@ function About(){
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p className="language-label"><strong>Software Engineer</strong></p>
+                            <p className="language-label"><strong>Software Engineer - 2022</strong></p>
                         </div>
                     </Col>
                 </Row>
@@ -166,7 +168,7 @@ function About(){
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p className="language-label"><strong>Data Analyst, Business Intelligence</strong></p>
+                            <p className="language-label"><strong>Data Analyst, Business Intelligence - 2020-2021</strong></p>
                             <p>ITHAKA</p>
                         </div>
                     </Col>
@@ -181,7 +183,7 @@ function About(){
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p className="language-label"><strong>Publisher Support Associate, Content Development</strong></p>
+                            <p className="language-label"><strong>Publisher Support Associate, Content Development - 2018-2020</strong></p>
                             <p>ITHAKA</p>
                         </div>
                     </Col>
@@ -192,7 +194,8 @@ function About(){
                     </Col>
                     <Col>
                         <div className="education-container">
-                            <p><strong>Education Coordinator</strong></p>
+                            <p className="language-label"><strong>Education Coordinator - 2018</strong></p>
+                            <p>Success Academy Charter Schools</p>
                         </div>
                     </Col>
                 </Row>
