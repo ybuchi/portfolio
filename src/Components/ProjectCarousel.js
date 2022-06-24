@@ -11,7 +11,7 @@ function ProjectCarousel (){
         return (
             <Carousel.Item key={project.id}>
                 <img  style={{width: "100%"}} src={require(`${project.image}`)} alt="moutain"/>
-                <Button href={project.project_url} variant="info">Visit Website</Button>
+                <Button href={project.project_url} variant="info">Visit App</Button>
             </Carousel.Item>
             )
     })

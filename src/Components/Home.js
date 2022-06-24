@@ -34,6 +34,8 @@ function Home(){
                                         {/* <span className="greetings">Hi! Bonjour! Grüezi!</span><br/> */}
                                         {/* <span id="my-name-is">I'm </span><br/> */}
                                         <span id="yannik">YANNIK BÜCHI</span><br/>
+                                        <img id="profile-pic" src={require("./Images/SemiProfessionalPic.jpg")} alt="Yannik"/>     
+                                        {/* <img id="personal-logo" src={require("./Images/logo.png")} alt="logo"/> */}
                                         {/* <span id="i-am-a">a </span><br/> */}
                                         <div id="adjectives" className="content" style={{textAlign: "center"}}>
                                             <div className="content_container">
@@ -61,7 +63,6 @@ function Home(){
                     </Row>
                     {/* Profile Pic */}
                 </Container>   
-                <img id="profile-pic" src={require("./Images/SemiProfessionalPic.jpg")} alt="Yannik"/>     
             </Jumbotron>
             <article className="recent-projects">
 

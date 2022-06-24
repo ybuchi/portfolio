@@ -2,17 +2,18 @@
     height: 200px;
     border-radius: 50%;
     border: 2px white solid;
-    position: absolute;
-    bottom: -35%;
+    /* position: absolute; */
+    /* bottom: -25%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     transition: box-shadow 1s ease;
 }
 #home-jumbo{
 
-    background: linear-gradient(-45deg, #19282F, #B33030, #A1B57D, #23d5ab);
+    /* background: linear-gradient(-45deg, #19282F, #B33030, #A1B57D, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite; */
+    background-color: black;
     font-family: 'Chakra Petch', sans-serif;
 
 }
@@ -41,14 +42,17 @@
     font-size: 40px;
 }
 #yannik{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
 }
 #i-am-a{
     font-size: 30px;
 }
 #software-engineer{
-    font-size: 30px;
+    font-size: 50px;
+}
+#personal-logo{
+    height: 100px;
 }
 .greetings{
     font-size:50px;
