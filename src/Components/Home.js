@@ -96,13 +96,13 @@ function Home(){
                         variant="light"
                         value="work"
                         onClick={handleScrollToSection}>
-                        Curious and Ambitious
+                        Always Be Coding
                 </Button>
                 <Button className="page-nav-btn" 
                         variant="light"
                         value="tools"
                         onClick={handleScrollToSection}>
-                        Open-Minded
+                        Human-Centric Approach
                 </Button>
                 
             </div> 
@@ -115,7 +115,7 @@ function Home(){
                             <p className="page-text-p">{mission.paragraph2}</p>
                             <p className="page-text-p">{mission.paragraph3}</p>
                         </Col>
-                        <Col style={{position: "relative"}} sm={12} md={6}>
+                        <Col id="mission-quote" style={{position: "relative"}} sm={12} md={6}>
                             <h3 className="page-text-q">{mission.quote}</h3>
                         </Col>
                     </Row>   
@@ -129,7 +129,7 @@ function Home(){
                             
                         </Col>
                         <Col sm={12} md={6} id="work-col-container" className="col-container">
-                            <h1 className="page-section-header" id="work">Curious & Ambitious</h1>
+                            <h1 className="page-section-header" id="work">Always Be Coding</h1>
                             <p className="page-text-p">{work.paragraph1}</p>
                             <p className="page-text-p">{work.paragraph2}</p>
                             <p className="page-text-p">{work.paragraph3}</p>
@@ -143,7 +143,7 @@ function Home(){
                 <Container>
                     <Row>
                         <Col sm={12} md={6} id="tools-col-container" className="col-container">
-                            <h1 className="page-section-header" id="tools">Open-Minded Team Player</h1>
+                            <h1 className="page-section-header" id="tools">Human-Centric Approach</h1>
                             <p className="page-text-p">{work_tools.paragraph1}</p>
                             <p className="page-text-p">{work_tools.paragraph2}</p>
                             <p className="page-text-p">{work_tools.paragraph3}</p>

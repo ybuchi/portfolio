@@ -15,11 +15,12 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .col-container{
-    padding: 20px;
+    padding: 20px;@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 }
 #mission-col-container{
     background-color: #D3ECA7;
 }
+
 #work-col-container{
     background-color: #B33030;
     color: white;
@@ -200,6 +201,7 @@
     transform: translate(-50%, -50%);
     font-size: 25px;
     font-style: italic;
+    padding: 20px;
 }
 .page-text-q:before{
     content: '"';
