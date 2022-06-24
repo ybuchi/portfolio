@@ -9,6 +9,7 @@ import Home from './Components/Home';
 import Portfolio from './Components/Portfolio';
 import About from './Components/About';
 import { render } from "react-dom";
+import "animate.css/animate.min.css";
 import {
   BrowserRouter,
   Routes,

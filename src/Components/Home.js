@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Home(){
     const navigate = useNavigate();
@@ -71,9 +72,18 @@ function Home(){
                 <h2>Recent Projects</h2>
                 <Container>
                     <Row>
-                        <Col onClick={()=> window.open("https://cuisto.herokuapp.com/", "_blank")}className="recent-project" id="first-recent-project" sm={12} md={6}>
+                        <Col>
+                        <AnimationOnScroll animateIn="animate__fadeInLeft">
+                            <Container onClick={()=> window.open("https://cuisto.herokuapp.com/", "_blank")} className="recent-project" id="first-recent-project" sm={12} md={6}>
+                            </Container>
+                        </AnimationOnScroll>
                         </Col>
-                        <Col onClick={()=> window.open("https://gorgeous-empanada-210319.netlify.app/", "_blank")}className="recent-project" id="second-recent-project" sm={12} md={6}>
+                        
+                        <Col>
+                            <AnimationOnScroll animateIn="animate__fadeInLeft">
+                                <Container onClick={()=> window.open("https://gorgeous-empanada-210319.netlify.app/", "_blank")}className="recent-project" id="second-recent-project" sm={12} md={6}>
+                                </Container>
+                            </AnimationOnScroll>
                         </Col>
                     </Row>
                 </Container>
