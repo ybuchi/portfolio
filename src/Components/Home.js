@@ -8,9 +8,10 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { useNavigate } from "react-router-dom";
 
 function Home(){
-
+    const navigate = useNavigate();
     const jumboStyle = {backgroundColor: "#19282F", color: "white", position: "relative", paddingTop: "50px"};
     const backgroundImage = ""
 
@@ -33,7 +34,7 @@ function Home(){
                                     <div>
                                         {/* <span className="greetings">Hi! Bonjour! Grüezi!</span><br/> */}
                                         {/* <span id="my-name-is">I'm </span><br/> */}
-                                        <span id="yannik">YANNIK BÜCHI</span><br/>
+                                        <span id="yannik">Yannik Büchi</span><br/>
                                         <img id="profile-pic" src={require("./Images/SemiProfessionalPicSmaller.jpg")} alt="Yannik"/>     
                                         {/* <img id="personal-logo" src={require("./Images/logo.png")} alt="logo"/> */}
                                         {/* <span id="i-am-a">a </span><br/> */}
@@ -65,13 +66,14 @@ function Home(){
                     {/* Profile Pic */}
                 </Container>   
             </Jumbotron>
+            <section id="home-content">
             <article className="recent-projects">
                 <h2>Recent Projects</h2>
                 <Container>
                     <Row>
-                        <Col className="recent-project" id="first-recent-project" sm={12} md={6}>
+                        <Col onClick={()=> window.open("https://cuisto.herokuapp.com/", "_blank")}className="recent-project" id="first-recent-project" sm={12} md={6}>
                         </Col>
-                        <Col className="recent-project" id="second-recent-project" sm={12} md={6}>
+                        <Col onClick={()=> window.open("https://gorgeous-empanada-210319.netlify.app/", "_blank")}className="recent-project" id="second-recent-project" sm={12} md={6}>
                         </Col>
                     </Row>
                 </Container>
@@ -155,6 +157,7 @@ function Home(){
                 </Container>
             </div>
             </article>
+            </section>
         </>
     )
 }

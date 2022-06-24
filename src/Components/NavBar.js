@@ -14,10 +14,10 @@ function NavBar({ show, setShow, handleShow }){
   
     return(
         <Navbar bg="dark" variant="dark">
-            <Button id="sidebar-btn" variant="primary" onClick={handleShow} style={{marginLeft: "25px"}}>
+            {/* <Button id="sidebar-btn" variant="primary" onClick={handleShow} style={{marginLeft: "25px"}}>
                 <img id="nav-logo" src={require("./Images/MyLogo-B&W.png")} alt="menu"/>
-            </Button>
-            <nav style={{margin: "0px 0px", padding: "5px 0px"}}>
+            </Button> */}
+            <nav style={{margin: "0px 0px", padding: "5px 0px", textAlign: "center"}}>
                 <ul id="navbar-list">
                     <li style={{display: "inline", marginRight: "20px"}}>
                         <Link className="navbar-link" to="/">Home</Link>

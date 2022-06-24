@@ -37,7 +37,7 @@
     font-size: 40px;
 }
 #yannik{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
 }
 #i-am-a{
@@ -54,6 +54,7 @@
     font-size: 50px;
     font-family: 'Bungee', cursive;
     text-decoration: underline;
+    color:white;
 }
 #personal-logo{
     height: 100px;
@@ -73,16 +74,21 @@
     /* margin-bottom: 20px; */
     margin-left: auto;
     margin-right: auto;
-    background-image: url("./Images/interlaced.png");
-    backgroun-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-image: url("./Images/interlaced.png"); */
+    background-color: rgba(220,220,220,0.8);
+    /* backgroun-repeat: no-repeat;
+    background-attachment: fixed; */
 }
-
-#values-article{
-    background-image: url("./Images/mountainsbg.jpg");
+#home-content{
+    background-image: url("./Images/Zermatt.jpg");
     backgroun-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+}
+
+#values-article{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 50px;
@@ -202,6 +208,7 @@
     font-size: 25px;
     font-style: italic;
     padding: 20px;
+    color: white;
 }
 .page-text-q:before{
     content: '"';
@@ -344,3 +351,10 @@
         background-position: 0% 50%;
     }
 }
+
+/* Media query to prevent scrolling bug on mobile */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
