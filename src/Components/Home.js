@@ -118,54 +118,61 @@ function Home(){
                 </Button>
                 
             </div> 
-            <article className="page-text-container">
-                <Container>
-                    <Row>
-                        <Col sm={12} md={6} id="mission-col-container" className="col-container">
-                            <h1 className="page-section-header" id="mission">Mission-Driven</h1>
-                            <p className="page-text-p">{mission.paragraph}</p>
-                            <p className="page-text-p">{mission.paragraph2}</p>
-                            <p className="page-text-p">{mission.paragraph3}</p>
-                        </Col>
-                        <Col id="mission-quote" style={{position: "relative"}} sm={12} md={6}>
-                            <h3 className="page-text-q">{mission.quote}</h3>
-                        </Col>
-                    </Row>   
-                </Container> 
-            </article>
+
+            <AnimationOnScroll animateIn="animate__fadeIn">
+                <article className="page-text-container">
+                    <Container>
+                        <Row>
+                            <Col sm={12} md={6} id="mission-col-container" className="col-container">
+                                <h1 className="page-section-header" id="mission">Mission-Driven</h1>
+                                <p className="page-text-p">{mission.paragraph}</p>
+                                <p className="page-text-p">{mission.paragraph2}</p>
+                                <p className="page-text-p">{mission.paragraph3}</p>
+                            </Col>
+                            <Col id="mission-quote" style={{position: "relative"}} sm={12} md={6}>
+                                <h3 className="page-text-q">{mission.quote}</h3>
+                            </Col>
+                        </Row>   
+                    </Container> 
+                </article>
+            </AnimationOnScroll>
             
-            <div className="page-text-container">
-                <Container>
-                    <Row>
-                        <Col sm={12} md={6}>
-                            
-                        </Col>
-                        <Col sm={12} md={6} id="work-col-container" className="col-container">
-                            <h1 className="page-section-header" id="work">Always Be Coding</h1>
-                            <p className="page-text-p">{work.paragraph1}</p>
-                            <p className="page-text-p">{work.paragraph2}</p>
-                            <p className="page-text-p">{work.paragraph3}</p>
-                            <p className="page-text-p">{work.paragraph4}</p>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            
-            <div className="page-text-container">
-                <Container>
-                    <Row>
-                        <Col sm={12} md={6} id="tools-col-container" className="col-container">
-                            <h1 className="page-section-header" id="tools">Human-Centric Approach</h1>
-                            <p className="page-text-p">{work_tools.paragraph1}</p>
-                            <p className="page-text-p">{work_tools.paragraph2}</p>
-                            <p className="page-text-p">{work_tools.paragraph3}</p>
-                        </Col>
-                        <Col sm={12} md={6}>
-                            
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <AnimationOnScroll animateIn="animate__fadeIn">
+                <div className="page-text-container">
+                    <Container>
+                        <Row>
+                            <Col sm={12} md={6}>
+                                
+                            </Col>
+                            <Col sm={12} md={6} id="work-col-container" className="col-container">
+                                <h1 className="page-section-header" id="work">Always Be Coding</h1>
+                                <p className="page-text-p">{work.paragraph1}</p>
+                                <p className="page-text-p">{work.paragraph2}</p>
+                                <p className="page-text-p">{work.paragraph3}</p>
+                                <p className="page-text-p">{work.paragraph4}</p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </AnimationOnScroll>
+
+            <AnimationOnScroll animateIn="animate__fadeIn">
+                <div className="page-text-container">
+                    <Container>
+                        <Row>
+                            <Col sm={12} md={6} id="tools-col-container" className="col-container">
+                                <h1 className="page-section-header" id="tools">Human-Centric Approach</h1>
+                                <p className="page-text-p">{work_tools.paragraph1}</p>
+                                <p className="page-text-p">{work_tools.paragraph2}</p>
+                                <p className="page-text-p">{work_tools.paragraph3}</p>
+                            </Col>
+                            <Col sm={12} md={6}>
+                                
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            </AnimationOnScroll>
             </article>
             </section>
         </>
