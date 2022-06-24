@@ -34,7 +34,7 @@ function Home(){
                                         {/* <span className="greetings">Hi! Bonjour! Grüezi!</span><br/> */}
                                         {/* <span id="my-name-is">I'm </span><br/> */}
                                         <span id="yannik">YANNIK BÜCHI</span><br/>
-                                        <img id="profile-pic" src={require("./Images/SemiProfessionalPic.jpg")} alt="Yannik"/>     
+                                        <img id="profile-pic" src={require("./Images/SemiProfessionalPicSmaller.jpg")} alt="Yannik"/>     
                                         {/* <img id="personal-logo" src={require("./Images/logo.png")} alt="logo"/> */}
                                         {/* <span id="i-am-a">a </span><br/> */}
                                         <div id="adjectives" className="content" style={{textAlign: "center"}}>
@@ -54,7 +54,8 @@ function Home(){
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <span id="software-engineer" style={{textAlign: "center", color: "white"}}>Software Engineer</span> 
+                                            <p id="software-engineer" style={{textAlign: "center", color: "white"}}>Software Engineer</p> 
+                                            <p id="skill-pane" style={{fontSize: "20px"}}>JavaScript | React | Ruby | Rails | SQL | Python</p>
                                         </div>
                                     </div>
                                 </Col>
@@ -65,15 +66,12 @@ function Home(){
                 </Container>   
             </Jumbotron>
             <article className="recent-projects">
-
                 <h2>Recent Projects</h2>
                 <Container>
                     <Row>
                         <Col className="recent-project" id="first-recent-project" sm={12} md={6}>
-                            {/* <h2 id="first-proj-label">Cuisto (in progress)</h2> */}
                         </Col>
                         <Col className="recent-project" id="second-recent-project" sm={12} md={6}>
-                            {/* <h2 id="second-proj-label">Cuisto (in progress)</h2> */}
                         </Col>
                     </Row>
                 </Container>
@@ -81,10 +79,11 @@ function Home(){
                         variant="light"
                         value="All Projects"
                         >
-                        <Link to="/portfolio">Go to Portfolio</Link>
+                        <Link to="/portfolio">View Portfolio</Link>
                 </Button>
             </article>
-
+            <article id="values-article">
+            <h2 id="values" >Values</h2>
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">
                 <Button className="page-nav-btn" 
@@ -106,9 +105,8 @@ function Home(){
                         Open-Minded
                 </Button>
                 
-            </div>
-            
-            <div className="page-text-container">
+            </div> 
+            <article className="page-text-container">
                 <Container>
                     <Row>
                         <Col sm={12} md={6} id="mission-col-container" className="col-container">
@@ -122,7 +120,7 @@ function Home(){
                         </Col>
                     </Row>   
                 </Container> 
-            </div>
+            </article>
             
             <div className="page-text-container">
                 <Container>
@@ -156,6 +154,7 @@ function Home(){
                     </Row>
                 </Container>
             </div>
+            </article>
         </>
     )
 }
