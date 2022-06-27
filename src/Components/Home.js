@@ -46,7 +46,7 @@ function Home(){
                                                         Mission-driven
                                                     </li>
                                                     <li className="content__container__list__item" style={{color: "lightblue", fontSize: "40px"}}>
-                                                        Bilingual
+                                                        Trilingual
                                                     </li>
                                                     <li className="content__container__list__item" style={{color: "lightblue", fontSize: "40px"}}>
                                                         Fullstack
