@@ -141,8 +141,8 @@ function Home(){
                 <div className="page-text-container">
                     <Container>
                         <Row>
-                            <Col sm={12} md={6}>
-                                
+                            <Col id="always-be-coding" sm={12} md={6}>
+                                <h3 className="page-text-q">There is no passion without struggle.</h3>
                             </Col>
                             <Col sm={12} md={6} id="work-col-container" className="col-container">
                                 <h1 className="page-section-header" id="work">Always Be Coding</h1>
@@ -166,7 +166,7 @@ function Home(){
                                 <p className="page-text-p">{work_tools.paragraph2}</p>
                                 <p className="page-text-p">{work_tools.paragraph3}</p>
                             </Col>
-                            <Col sm={12} md={6}>
+                            <Col id="human-centric" sm={12} md={6}>
                                 
                             </Col>
                         </Row>
