@@ -64,36 +64,10 @@ function Home(){
                             </Row>
                         </Col>
                     </Row>
-                    {/* Profile Pic */}
                 </Container>   
             </Jumbotron>
             <section id="home-content">
-            <article className="recent-projects">
-                <h2>Recent Projects</h2>
-                <Container>
-                    <Row>
-                        <Col>
-                        <AnimationOnScroll animateIn="animate__fadeInLeft">
-                            <Container onClick={()=> window.open("https://cuisto.herokuapp.com/", "_blank")} className="recent-project" id="first-recent-project" sm={12} md={6}>
-                            </Container>
-                        </AnimationOnScroll>
-                        </Col>
-                        
-                        <Col>
-                            <AnimationOnScroll animateIn="animate__fadeInLeft">
-                                <Container onClick={()=> window.open("https://gorgeous-empanada-210319.netlify.app/", "_blank")}className="recent-project" id="second-recent-project" sm={12} md={6}>
-                                </Container>
-                            </AnimationOnScroll>
-                        </Col>
-                    </Row>
-                </Container>
-                <Button className="page-nav-btn" 
-                        variant="light"
-                        value="All Projects"
-                        >
-                        <Link to="/portfolio">View Portfolio</Link>
-                </Button>
-            </article>
+
             <article id="values-article">
             <h2 id="values" >Values</h2>
             {/* Navigations to Mission, How I work and Tools */}
@@ -141,8 +115,12 @@ function Home(){
                 <div className="page-text-container">
                     <Container>
                         <Row>
-                            <Col id="always-be-coding" sm={12} md={6}>
-                                <h3 className="page-text-q">There is no passion without struggle.</h3>
+                            <Col id="always-be-coding" style={{position: "relative"}} sm={12} md={6}>
+                                <div className="page-text-q">
+                                    <h3>There is no passion without struggle.</h3>
+                                    <h6>-Albert Camus</h6>
+                                </div>
+                                
                             </Col>
                             <Col sm={12} md={6} id="work-col-container" className="col-container">
                                 <h1 className="page-section-header" id="work">Always Be Coding</h1>
@@ -166,8 +144,11 @@ function Home(){
                                 <p className="page-text-p">{work_tools.paragraph2}</p>
                                 <p className="page-text-p">{work_tools.paragraph3}</p>
                             </Col>
-                            <Col id="human-centric" sm={12} md={6}>
-                                
+                            <Col id="human-centric" style={{position: "relative"}} sm={12} md={6}>
+                                <div className="page-text-q">
+                                    <h3>Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination.</h3>
+                                    <h6>-Albert Einstein</h6>
+                                </div>
                             </Col>
                         </Row>
                     </Container>

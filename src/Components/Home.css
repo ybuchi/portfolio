@@ -110,7 +110,6 @@
     margin-right: auto;
     border: black 1px solid;
     border-radius: 5px;
-    position: relative;
     transition: box-shadow 0.5s ease;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
