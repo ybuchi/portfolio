@@ -5,6 +5,9 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+#about-txt{
+    font-size: 18px;
+}
 #fasny-img{
     width: 60px;
 }
@@ -17,24 +20,43 @@
 .education-row{
     margin-bottom: 20px;
 }
+#about-educational{
+    background-color: #E8E1D9;
+    padding: 20px;
+}
 .section-container{
     margin-bottom: 80px;
 }
 #about-jumbo{
-    /* background-image: url("./Images/ch_bg.jpeg"); */
-    background-position: top;
+    background-image: url("./Images/Toggenburg.jpg");
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 300px;
-    positon: relative;
+    position: relative;
     border-bottom: 3px black solid;
 }
+#casual-profile-img{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+    border-radius: 30%;
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+    transform: translateY(50%);
+    background-image: url("./Images/Casual_Profile.jpeg");
+    background-size: 300%;
+    background-position: top 60% right 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 #about-jumbo h1{
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute; 
     font-size: 100px;
-    /* color: white; */
     font-family: 'Chakra Petch', sans-serif;
 }
 #levaud{
@@ -56,10 +78,15 @@
     background-image: url('./Images/bogota.jpeg');
     background-size: cover;
     background-position: center;
+    background-attachment: local, scroll;
 }
 .country-img{
-    height: 60px;
+    height: 80px;
     margin-bottom: 30px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .language-bar{
     height: 30px;

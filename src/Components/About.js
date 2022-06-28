@@ -35,6 +35,8 @@ function About(){
         <>
         {/* <Jumbotron id="about-jumbo"> */}
         <div id="about-jumbo">
+            <div id="casual-profile-img"/>
+
             <h1>About</h1>
         </div>
         {/* </Jumbotron> */}
@@ -50,23 +52,27 @@ function About(){
                 <Row>
                     <Col sm={12} md={4}>
                         <div id="bogota" className="country-img">
+                            Bogotá, Colombia
                         </div>
                         <div id="levaud" className="country-img">
+                            <p>Le Vaud, Switzerland</p>
                         </div>
-                        <div id="rye" className="country-img" style={{textAlign: "center"}}>
+                        <div id="rye" className="country-img">
+                            <p>Rye, New York</p>
                         </div>
                         <div id="queens" className="country-img">
+                            <p>Astoria, Queens</p>
                         </div>
                     </Col>
                     <Col className="relative" sm={12} md={8}>
                         <div id="about-txt">
                             <p>Hi! I'm Yannik!</p>
-                            <p>I'm a Swiss-American programmer originally from Vaud, Switzerland and currently based in Queens, New York.</p>
-                            <p>Our strong ties to our Swiss family roots in Vaud and Zürich meant living and thriving in a multilingual household speaking French, Swiss-German and English.</p>
-                            <p>Perhaps unsurprisingly, my favorite activities include hiking, skiing, snowboarding... I guess you could say that simply being in the mountains makes me happy.</p>
-                            <p>Playing and listening to music are also part of my favorite passtimes. I've been playing the piano since the age of 7, and have recently picked up the guitar.</p>
+                            <p>I'm a Swiss-American programmer with Colombian roots.</p>
+                            <p>I immigrated to the city of Rye, New York in 1997 from the small village of Le Vaud, Switzerland and recently gained American citizenship as of April 2022.</p>
+                            <p>Despite growing up in New York, I maintain strong ties to my Swiss-german and francophone roots in the cantons of Vaud and Zürich.</p>
+                            <p>I received a formal bilingual education in both French and English and am conversationally fluent in both German and Swiss-German. I'm currently looking to add Italian and Spanish to the list!</p>
+                            <p>My favorite activities are perhaps unsurprisingly Swiss in nature and include hiking, skiing, snowboarding... really anything with mountains and snow. In addition, I really enjoy playing the piano and am currently teaching myself how to play the guitar.</p>
                         </div>
-                        
                     </Col>
                 </Row>
             </Container> 
@@ -75,11 +81,8 @@ function About(){
         <article className="about-article" id="about-educational" style={{textAlign: "left"}}>
             <Container>
                 <Row>
-                    <h1 className="section-container"> Educational Background </h1>
-                </Row>
-                <Row>
                     <Col sm={12} md={8}>
-                        
+                        <h1 className="section-container"> Education </h1>
                         <div className="education-container">
                             <Container>
                                 <Row className="education-row">
