@@ -36,7 +36,6 @@ function About(){
         {/* <Jumbotron id="about-jumbo"> */}
         <div id="about-jumbo">
             <div id="casual-profile-img"/>
-
             <h1>About</h1>
         </div>
         {/* </Jumbotron> */}
@@ -66,7 +65,7 @@ function About(){
                     </Col>
                     <Col className="relative" sm={12} md={8}>
                         <div id="about-txt">
-                            <p>Hi! I'm Yannik!</p>
+                            <p>Hi, I'm Yannik!</p>
                             <p>I'm a Swiss-American programmer with Colombian roots.</p>
                             <p>I immigrated to the city of Rye, New York in 1997 from the small village of Le Vaud, Switzerland and recently gained American citizenship as of April 2022.</p>
                             <p>Despite growing up in New York, I maintain strong ties to my Swiss-german and francophone roots in the cantons of Vaud and Zürich.</p>
