@@ -22,7 +22,13 @@
 }
 #about-educational{
     background-color: #E8E1D9;
-    padding: 20px;
+    padding: 100px;
+}
+#about-personal{
+    padding: 100px;
+}
+#about-professional{
+    padding: 100px;
 }
 .section-container{
     margin-bottom: 80px;
