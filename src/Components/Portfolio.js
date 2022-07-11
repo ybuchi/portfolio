@@ -2,8 +2,6 @@ import React from "react";
 import { portfolio } from "../Data/data";
 import ProjectCard from "./ProjectCard";
 import "./Portfolio.css";
-import Carousel from 'react-bootstrap/Carousel';
-import ProjectCarousel from "./ProjectCarousel";
 import { Container, Row, Col} from "react-bootstrap";
 
 function Portfolio(){
@@ -22,9 +20,6 @@ function Portfolio(){
             <h1 id="portfolio-title">My Portfolio</h1>
             <h4>Check out my past and current projects!</h4>
             <h6>More Coming Soon...</h6>
-            <Row>
-                <ProjectCarousel />
-            </Row>
             <Row>
                 {mappedPortfolioCards}
             </Row>

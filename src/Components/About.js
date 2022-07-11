@@ -158,9 +158,6 @@ function About(){
             </Container>
 
         </div>
-        {/* </Jumbotron> */}
-
-  
         </>
     )
 }
