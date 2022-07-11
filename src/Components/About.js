@@ -35,174 +35,132 @@ function About(){
         <>
         {/* <Jumbotron id="about-jumbo"> */}
         <div id="about-jumbo">
-            <div id="casual-profile-img"/>
-            <h1>About</h1>
+
+            <Container>
+                <Row className="about-container">
+                    <Col>
+                        <h4><span style={{fontWeight: "bold"}}>3</span> Languages</h4>
+                        <Container>
+                            <Row className="language-box">
+                                <Col>
+                                    <img className="icon2" src={require("./Images/France.png")} alt="french"/>
+                                    <p className="about-list">French</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/UK.png")} alt="english"/>
+                                    <p className="about-list">English</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/DE.png")} alt="german"/>
+                                    <p className="about-list">German</p>
+                                </Col>
+                            </Row>
+                            
+                        </Container>
+                    </Col>
+                    <Col>
+                        <h4><span style={{fontWeight: "bold"}}>2</span> Nationalities</h4>
+                        <Container>
+                            <Row>
+                                <Col><img className="icon" src={require("./Images/Switzerland.png")} alt="switzerland"/></Col>
+                                <Col><img className="icon" src={require("./Images/USA.png")} alt="United States"/></Col>
+                            </Row>
+                        </Container>
+                    </Col>
+                </Row>
+                <Row className="about-container">
+                    <Col>
+                        <h4><span>Activities</span></h4>
+                        <Container>
+                            <Row>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/coding.png")} alt="coding" />
+                                    <p className="about-list">Coding</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/skiing.png")} alt="skiing"/>
+                                    <p className="about-list">Skiing</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/snowboarding.png")} alt="snowboarding"/>
+                                    <p className="about-list">Snowboarding</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/hiking.png")} alt="hiking"/>
+                                    <p className="about-list">Hiking</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/piano.png")} alt="hiking"/>
+                                    <p className="about-list">Piano</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/guitar.png")} alt="hiking"/>
+                                    <p className="about-list">Guitar</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/soccer.png")} alt="hiking"/>
+                                    <p className="about-list">Soccer</p>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Col>
+                </Row>
+                <div id="casual-profile-img"/>
+                <Row className="about-container">
+                    <Col>
+                        <Container>
+                            
+                            <Row>
+                                <Col>
+                                    <Row>
+                                    <h4>Front-End</h4>
+                                    <Col>
+                                        <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>
+                                        <p className="about-list">JavaScript</p>
+                                    </Col>
+                                    <Col>
+                                        <img className="icon2" src={require("./Images/css2.png")} alt="javascript"/>
+                                        <p className="about-list">CSS3</p>
+                                    </Col>
+                                    <Col>
+                                        <img className="icon2" src={require("./Images/html2.png")} alt="javascript"/>
+                                        <p className="about-list">HTML5</p>
+                                    </Col>
+                                    <Col sm={12}>
+                                        <img className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
+                                        <p className="about-list">React</p>
+                                    </Col>
+                                    </Row>
+                                </Col>
+
+                                <Col>
+                                <Row>
+                                <h4>Back-End</h4>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/PY.png")} alt="python"/>
+                                    <p className="about-list">Python</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2"  src={require("./Images/Rb.png")} alt="ruby"/>
+                                    <p className="about-list">Ruby</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2"  src={require("./Images/rails2.png")} alt="ruby"/>
+                                    <p className="about-list">Rails</p>
+                                </Col>
+                                </Row>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Col>
+                </Row>
+
+            </Container>
+
         </div>
         {/* </Jumbotron> */}
 
-        <article className="about-article" id="about-personal" style={{textAlign: "left"}}>
-            <Container>
-                <Row>
-                    <Col>
-                        <h1  className="section-container" style={{textAlign: "right"}}>Personal Background</h1>
-                    </Col>
-                </Row>
-
-                <Row>
-                    <Col sm={12} md={4}>
-                        <div id="bogota" className="country-img">
-                            Bogotá, Colombia
-                        </div>
-                        <div id="levaud" className="country-img">
-                            <p>Le Vaud, Switzerland</p>
-                        </div>
-                        <div id="rye" className="country-img">
-                            <p>Rye, New York</p>
-                        </div>
-                        <div id="queens" className="country-img">
-                            <p>Astoria, Queens</p>
-                        </div>
-                    </Col>
-                    <Col className="relative" sm={12} md={8}>
-                        <div id="about-txt">
-                            <p>Hi, I'm Yannik!</p>
-                            <p>I'm a Swiss-American programmer with Colombian roots.</p>
-                            <p>I immigrated to the city of Rye, New York in 1997 from the small village of Le Vaud, Switzerland and recently gained American citizenship as of April 2022.</p>
-                            <p>Despite growing up in New York, I maintain strong ties to my Swiss-german and francophone roots in the cantons of Vaud and Zürich.</p>
-                            <p>I received a formal bilingual education in both French and English and am conversationally fluent in both German and Swiss-German. I'm currently looking to add Italian and Spanish to the list!</p>
-                            <p>My favorite activities are perhaps unsurprisingly Swiss in nature and include hiking, skiing, snowboarding... really anything with mountains and snow. In addition, I really enjoy playing the piano and am currently teaching myself how to play the guitar.</p>
-                        </div>
-                    </Col>
-                </Row>
-            </Container> 
-        </article>
-
-        <article className="about-article" id="about-educational" style={{textAlign: "left"}}>
-            <Container>
-                <Row>
-                    <Col sm={12} md={8}>
-                        <h1 className="section-container"> Education </h1>
-                        <div className="education-container">
-                            <Container>
-                                <Row className="education-row">
-                                    <Col sm={2}>
-                                        <img id="fasny-img" src={require("./Images/FASNY-logo.jpg")} alt="french-american school of new york"/>
-                                    </Col>
-                                    <Col sm={10}>
-                                        <p className="language-label"><strong>French-American School of New York</strong></p>
-                                        <p>High School Diploma and Diploma of the French Baccalaureate</p>
-                                    </Col>
-                                </Row>
-                                <Row className="education-row">
-                                    <Col sm={2}>
-                                        <img id="colby-img" src={require("./Images/colby-college-logo.png")} alt="colby college"/>
-                                    </Col>
-                                    <Col sm={10}>
-                                        <p className="language-label"><strong>Colby College</strong></p>
-                                        <p>Bachelor of the Arts : Biology and French Studies double major</p>
-                                    </Col>
-                                </Row>
-                                <Row className="education-row">
-                                    <Col sm={2}>
-                                        <img id="flatiron-img" src={require("./Images/Flatiron.png")} alt="flatiron school"/>
-                                    </Col>
-                                    <Col sm={10}>
-                                        <p className="language-label"><strong>Flatiron School</strong></p>
-                                        <p>Software Engineering Bootcamp - JavaScript, React and Ruby-on-Rails</p>
-                                    </Col>
-                                </Row>
-
-                            </Container>
-                        </div>
-                    </Col>
-                    <Col sm={12} md={4} className="highlight-box">
-                        <h3 style={{textAlign: "center"}}>Languages</h3>
-                        <p className="language-label">French (Native Speaker)</p>
-                        <div className="language-bar">
-                            <div className="" id="french">
-                            </div>
-                        </div>
-                        <p className="language-label">English (Native Speaker)</p>
-                        <div className="language-bar">
-                            <div id="english">
-                            </div>
-                        </div>
-                        <p className="language-label">German (Conversationally Fluent)</p>
-                        <div className="language-bar">
-                            <div id="german" style={{width: "70%"}}>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </article>
-
-        <article className="about-article" id="about-professional" style={{textAlign: "left"}}>
-            <Container>
-                <h1  className="section-container" style={{textAlign: "right"}}> Professional Background</h1>
-                <p>While I come from a non-traditional background in computer science, I've worked hard to learn and pick up new tools and technologies to constantly improve my programming skills.</p>
-
-                <Row className="skill odd-row">
-                    <Col>
-                        <img className="excel-img" src={require("./Images/sql.png")} alt="sql"/>
-                        <img className="excel-img" src={require("./Images/javascript.png")} alt="javascript"/>
-                        <img className="excel-img" src={require("./Images/html.png")} alt="html"/>
-                        <img className="excel-img" src={require("./Images/css.png")} alt="css"/>
-                        <img className="excel-img" src={require("./Images/react.png")} alt="react"/>
-                        <img className="excel-img" src={require("./Images/ruby.png")} alt="ruby"/>
-                        <img className="excel-img" src={require("./Images/rails.png")} alt="rails"/>
-                    </Col>
-                    <Col>
-                        <div className="education-container">
-                            <p className="language-label"><strong>Software Engineer - 2022</strong></p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="skill">
-                    <Col>
-                        <img className="excel-img" src={require("./Images/excel.png")} alt="excel"/>
-                        <img className="excel-img" src={require("./Images/sql.png")} alt="sql"/>
-                        <img className="excel-img" src={require("./Images/tableau.png")} alt="tableau"/>
-                        <img className="excel-img" src={require("./Images/jasper.png")} alt="jasper"/>
-                        <img className="excel-img" src={require("./Images/databricks.png")} alt="databricks"/>
-                        <img className="excel-img" src={require("./Images/python.png")} alt="python"/>
-
-                    </Col>
-                    <Col>
-                        <div className="education-container">
-                            <p className="language-label"><strong>Data Analyst, Business Intelligence - 2020-2021</strong></p>
-                            <p>ITHAKA</p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="odd-row skill">
-                    <Col>
-                        <img className="excel-img" src={require("./Images/excel.png")} alt="excel"/>
-                        <img className="excel-img" src={require("./Images/sql.png")} alt="sql"/>
-                        <img className="excel-img" src={require("./Images/tableau.png")} alt="tableau"/>
-                        <img className="excel-img" src={require("./Images/jasper.png")} alt="jasper"/>
-
-                    </Col>
-                    <Col>
-                        <div className="education-container">
-                            <p className="language-label"><strong>Publisher Support Associate, Content Development - 2018-2020</strong></p>
-                            <p>ITHAKA</p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="skill">
-                    <Col>
-                        <img className="excel-img" src={require("./Images/excel.png")} alt="excel"/>
-                    </Col>
-                    <Col>
-                        <div className="education-container">
-                            <p className="language-label"><strong>Education Coordinator - 2018</strong></p>
-                            <p>Success Academy Charter Schools</p>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </article>
+  
         </>
     )
 }

@@ -33,24 +33,32 @@
 .section-container{
     margin-bottom: 80px;
 }
+.icon{
+    height: 100px;
+}
+.icon2{
+    height: 40px;
+    margin-bottom: 10px;
+}
+.icon2 + p{
+    font-size: 15px;
+}
 #about-jumbo{
     background-image: url("./Images/Zermatt.jpg");
     background-position-y: 25%;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    /* height: 200vh; */
     position: relative;
     border-bottom: 3px black solid;
+    padding-top: 40px;
 }
 #casual-profile-img{
     height: 150px;
     width: 150px;
     border: 2px black solid;
+    margin: auto;
     border-radius: 30%;
-    position: absolute;
-    left: 40px;
-    bottom: 0px;
-    transform: translateY(50%);
     background-image: url("./Images/Casual_Profile.jpeg");
     background-size: 300%;
     background-position: top 60% right 52%;
@@ -58,13 +66,43 @@
 }
 
 #about-jumbo h1{
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute; 
     font-size: 100px;
     font-family: 'Chakra Petch', sans-serif;
     color: white;
+}
+
+#about-jumbo h2{
+    font-size: 80px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+}
+#about-jumbo h3{
+    font-size: 55px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+}
+#about-jumbo h4{
+    font-size: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+}
+.about-list{
+    color:white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+
+
+}
+/* .language-box{
+    transition: border-left linear 1s;
+} */
+/* .language-box:hover{
+    border-left: white solid 1px;
+} */
+.about-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 #levaud{
     background-image: url('./Images/levaud.jpeg');
