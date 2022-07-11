@@ -17,6 +17,17 @@
     width: 300px;
     margin: auto;
 }
+.short-descr{
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+}
+.long-descr{
+    text-align: left;
+}
+.text{
+    padding: 5% 10%;
+}
 .proj-link{
     text-decoration: none;
     color: black;
@@ -25,4 +36,12 @@
 }
 .proj-link:hover{
     cursor: pointer;
+}
+
+.small-icon{
+    height: 30px;
+}
+.tool{
+    text-align: center;
+    margin: 35px 30px;
 }

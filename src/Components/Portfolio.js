@@ -15,16 +15,15 @@ function Portfolio(){
 
     return(
         <>
-        <Container id="portfolio">
-            <h1 id="portfolio-title">My Portfolio</h1>
-            <h4>Check out my past and current projects!</h4>
-            <h6>Stay tuned! More Projects and Info Coming Soon...</h6>
-            <Row>
-                {mappedPortfolioCards}
-            </Row>
-            
-        </Container>
-        
+            <Container id="portfolio">
+                <h1 id="portfolio-title">My Portfolio</h1>
+                <h4>Check out my past and current projects!</h4>
+                <h6>Stay tuned! More Projects and Info Coming Soon...</h6>
+                <Row>
+                    {mappedPortfolioCards}
+                </Row>
+                
+            </Container>
         </>
     )
 }
