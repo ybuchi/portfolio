@@ -38,8 +38,8 @@ const portfolio = [
     {
         project_name : "Cuisto",
         image: "./Images/Cuisto.png",
-        description: "Upskill your cooking with Cuisto, the best app for home cooks! This app allows you to track ingredients in your fridge and pantry and immediately recommends recipes to cooked based on what you have. In addition, create, share, and browse recipes!",
-        summary: "Upskill your cooking with Cuisto, the best app for home cooks! This app allows you to track ingredients in your fridge and pantry and immediately recommends recipes to cooked based on what you have. In addition, create, share, and browse recipes!",
+        description: "The Best App for Home Cooks!",
+        summary: "Cuisto is a cooking app that helps you organize your ingredients and recipes in one place so that you can focus on leveling up your skills in the kitchen!",
         tools: ["Javascript", "React", "Ruby", "Rails", "Postgres"],
         project_url: "https://cuisto.herokuapp.com/",
         github_url: "https://github.com/ybuchi/cuisto",
@@ -48,8 +48,8 @@ const portfolio = [
     {
         project_name : "Ellis",
         image: "./Images/NApp.png",
-        description: "Are you in the process of getting your US citizenship? This app gives you the tools you need to study and ace the civics portion of the interview.",
-        summary: "This is a summary of Project 2.",
+        description: "Are you the process of becoming an American citizen? Study for your naturalization interview here!",
+        summary: "Ellis is a study tool for people looking to ace the U.S. naturalization exam. Enter a study session to review the 2020 version of the civics exam, organize questions by thematic categories, and flag questions to optimize your studying!",
         tools: ["React", "JavaScript", "Ruby", "something else"],
         project_url: "https://gorgeous-empanada-210319.netlify.app/",
         github_url: "https://github.com/ybuchi/us-citizenship-app",
