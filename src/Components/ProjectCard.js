@@ -79,6 +79,7 @@ function ProjectCard({ project }){
                             {project.summary}
                         </p>
                     </Row>
+                    <hr></hr>
                     <Row>
                         <div className="long-descr">
                             <h5>Featured Technologies:</h5>

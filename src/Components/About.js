@@ -105,7 +105,9 @@ function About(){
                         </Container>
                     </Col>
                 </Row>
+                <hr/>
                 <div id="casual-profile-img"/>
+                <hr/>
                 <Row className="about-container">
                     <Col>
                         <Container>

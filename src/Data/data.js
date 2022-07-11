@@ -40,7 +40,7 @@ const portfolio = [
         image: "./Images/Cuisto.png",
         description: "The Best App for Home Cooks!",
         summary: "Cuisto is a cooking app that helps you organize your ingredients and recipes in one place so that you can focus on leveling up your skills in the kitchen!",
-        tools: ["JavaScript", "React", "Ruby", "Rails", "Postgres"],
+        tools: ["JavaScript", "React", "Ruby", "Rails"],
         project_url: "https://cuisto.herokuapp.com/",
         github_url: "https://github.com/ybuchi/cuisto",
         id: 1
