@@ -46,6 +46,13 @@ function ProjectCard({ project }){
                     </div>
     
                 )
+            case "PostgreSQL":
+                return(
+                    <div className="tool" style={{display: "inline-block"}}>
+                        <img className="small-icon" src={require("./Images/Postgres.png")} alt="react" />
+                        <p>{tool}</p>
+                    </div>   
+                )
             
             default:
                 return(

@@ -39,8 +39,8 @@ const portfolio = [
         project_name : "Cuisto",
         image: "./Images/Cuisto.png",
         description: "The Best App for Home Cooks!",
-        summary: "Cuisto is a cooking app that helps you organize your ingredients and recipes in one place so that you can focus on leveling up your skills in the kitchen!",
-        tools: ["JavaScript", "React", "Ruby", "Rails"],
+        summary: "Cuisto is a cooking app that helps home cooks streamline and upskill their cooking.",
+        tools: ["JavaScript", "React", "Ruby", "Rails", "PostgreSQL"],
         project_url: "https://cuisto.herokuapp.com/",
         github_url: "https://github.com/ybuchi/cuisto",
         id: 1
@@ -50,7 +50,7 @@ const portfolio = [
         image: "./Images/NApp.png",
         description: "Study for the US Naturalization Interview.",
         summary: "Ellis is a study tool for people looking to ace the U.S. naturalization exam. Enter a study session to review the 2020 version of the civics exam, organize questions by thematic categories, and flag questions to optimize your studying!",
-        tools: ["React", "JavaScript"],
+        tools: ["JavaScript", "React"],
         project_url: "https://gorgeous-empanada-210319.netlify.app/",
         github_url: "https://github.com/ybuchi/us-citizenship-app",
         id: 2
