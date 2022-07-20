@@ -197,6 +197,11 @@
 .page-text-container{
     margin: 80px 30px;
 }
+.page-text-container .row{
+    -webkit-box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 0px 3px rgba(0,0,0,0.65);
+}
 .page-section-header{
     text-align: left;
 }
