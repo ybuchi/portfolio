@@ -35,9 +35,12 @@ function About(){
         <>
         {/* <Jumbotron id="about-jumbo"> */}
         <div id="about-jumbo">
+            {/* //Profile Picture */}
+            <div id="casual-profile-img"/>
 
             <Container>
                 <Row className="about-container">
+                
                     <Col>
                         <h4><span style={{fontWeight: "bold"}}>3</span> Languages</h4>
                         <Container>
@@ -69,10 +72,10 @@ function About(){
                     </Col>
                 </Row>
                 <Row className="about-container">
-                    <Col>
+                    <Col style={{backgroundColor: "black", color: "White"}}>
                         <h4><span>Activities</span></h4>
-                        <Container>
-                            <Row>
+                        <Container >
+                            <Row >
                                 <Col>
                                     <img className="icon2" src={require("./Images/coding.png")} alt="coding" />
                                     <p className="about-list">Coding</p>
@@ -105,9 +108,7 @@ function About(){
                         </Container>
                     </Col>
                 </Row>
-                <hr/>
-                <div id="casual-profile-img"/>
-                <hr/>
+
                 <Row className="about-container">
                     <Col>
                         <Container>
