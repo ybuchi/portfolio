@@ -69,7 +69,7 @@ function Home(){
             <section id="home-content">
 
             <article id="values-article">
-            <h2 id="values" >Values</h2>
+            <h2 id="values" >Working Values</h2>
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">
                 <Button className="page-nav-btn" 
@@ -82,13 +82,13 @@ function Home(){
                         variant="light"
                         value="work"
                         onClick={handleScrollToSection}>
-                        Always Be Coding
+                        Self-Motivated
                 </Button>
                 <Button className="page-nav-btn" 
                         variant="light"
                         value="tools"
                         onClick={handleScrollToSection}>
-                        Human-Centric Approach
+                        Team Player
                 </Button>
                 
             </div> 
@@ -123,7 +123,7 @@ function Home(){
                                 
                             </Col>
                             <Col sm={12} md={6} id="work-col-container" className="col-container">
-                                <h1 className="page-section-header" id="work">Always Be Coding</h1>
+                                <h1 className="page-section-header" id="work">Self-Motivated</h1>
                                 <p className="page-text-p">{work.paragraph1}</p>
                                 <p className="page-text-p">{work.paragraph2}</p>
                                 <p className="page-text-p">{work.paragraph3}</p>
@@ -139,7 +139,7 @@ function Home(){
                     <Container>
                         <Row>
                             <Col sm={12} md={6} id="tools-col-container" className="col-container">
-                                <h1 className="page-section-header" id="tools">Human-Centric Approach</h1>
+                                <h1 className="page-section-header" id="tools">Team Player</h1>
                                 <p className="page-text-p">{work_tools.paragraph1}</p>
                                 <p className="page-text-p">{work_tools.paragraph2}</p>
                                 <p className="page-text-p">{work_tools.paragraph3}</p>

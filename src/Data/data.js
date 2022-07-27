@@ -1,27 +1,25 @@
 const mission = {
-    quote: "Being a mission-driven programmer means focusing on building applications and products with a clear positive impact on people, societies and the environment.",
-    paragraph: "What does it  mean to be a mission-driven programmer?",
-    paragraph2: "Today, we rightfully question whether technology has had more of a good or bad impact on our lives. One thing is certain: technology has fundamentally changed the way we live our lives and the way we connect with the world.",
-    paragraph3: "With coding comes great power and with great power comes a great responsibility to ensure that technology will really improve our quality of life. As such, I am always actively looking for ways to work on projects that put humans, societies and the environment first.",
+    quote: "Mission-driven software engineering is building applications and technologies with the motivation and action to understand and improve the social, economic and environmental impacts that they bring.",
+    paragraph: "I strive to make the world a better place through my code. I work with clients and companies that have developed a clear understanding of both the positive and negative impacts that their products bring and are consistantly looking to make the world a better place through their projects.",
+    paragraph2: "",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }
 
 const work = {
     quote: "This is a paragraph I want to quote.",
-    paragraph1: "ABC. Always Be Coding.",
-    paragraph2: "My curiosity and ambition know no boundaries. I started as a self-taught programmer and analyst and have since grown my skills and experience from working with SQL and relational databases to fullstack engineering using modern tools and languages including React, Python, Ruby and Rails.",
-    paragraph3:"Today, I continue to look for opportunities, both inside and outside of my professional life, that will challenge me to grow as a developer and software engineer.",
-    paragraph4:"Check out my list of projects to see what I am currently working on!",
+    paragraph1: "Just as technology constantly changes, adapts and evolves, I consistantly apply a hands-on approach to learning and molding myself into a modern software engineer.",
+    paragraph2: "I started off self-taught writing a few lines of SQL and have since worked hard to learn languages like Python for data science, JavaScript for front-end development and Ruby for back-end development. ",
+    paragraph3:"I have thoroughly enjoyed both the successes and struggles of developing new expertise in completely new languages, architectures and frameworks, and continue to leverage my self-motivated learning abilities to organically increase the value that I bring as an engineer.",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }
 
 const work_tools = {
     quote: "This is a paragraph I want to quote.",
-    paragraph1: "My diverse professional background working in both tech and non-tech roles have taught me that communcation, collaboration and a team-player attitude are the key to any project's success.",
-    paragraph2: "I've worked cross-functionally with teachers, academic publishers, finance, marketing and product teams, and most recently with software and data engineers as part of a fast-paced Agile team.",
-    paragraph3:"These experience have made me what I am today: an open-minded and inclusive team-player who deeply understands that best results come from enthusiasm, empathy, and a human-first approach.",
+    paragraph1: "Effective communication, collaboration, and transparency are the key to any project, team, or company's success.",
+    paragraph2: "I possess significant experience working with technical and non-technical stakeholders and clients alike, helping them understand the impact and business value they are looking to achieve so as to deliver the best solutions to achieving their goals and objectives.",
+    paragraph3:"I've learned first-hand the challenges of working in siloed teams and departments and have successfully contributed to the breaking-down of such barriers by adopting a human-first approach to the way I work.",
     image1: "placeholder for image 1",
     image2: "placeholder for image 2"
 }
