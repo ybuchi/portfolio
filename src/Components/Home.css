@@ -50,11 +50,22 @@
 #skill-pane{
     margin-top: 0px;
 }
-#values{
+.heading-sec{
     font-size: 50px;
     font-family: 'Bungee', cursive;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    margin-bottom: 35px;
     color: black;
+}
+.vertically-center{
+    transform: translateY(25%)
+}
+.vertically-center h3{
+    margin-bottom: 25px;
+}
+.nav-btn{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #personal-logo{
     height: 100px;
@@ -80,15 +91,15 @@
     background-attachment: fixed; */
 }
 #home-content{
-    /* background-image: url("./Images/Zermatt.jpg");
-    backgroun-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center; */
     background-color: ivory;
 }
 
-#values-article{
+#featured{
+    background-color: lightgray;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+.content-article{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 50px;

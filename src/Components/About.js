@@ -40,7 +40,6 @@ function About(){
 
             <Container>
                 <Row className="about-container">
-                
                     <Col>
                         <h4><span style={{fontWeight: "bold"}}>3</span> Languages</h4>
                         <Container>

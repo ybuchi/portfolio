@@ -11,7 +11,7 @@ function ProjectCard({ project }){
             case "JavaScript":
                 return(
                     <>
-                    <div className="tool" style={{display: "inline-block"}}>
+                    <div key={index} className="tool" style={{display: "inline-block"}}>
                         <img className="small-icon" src={require("./Images/javascript.png")} alt="javascript" />
                         <p>{tool}</p>
                     </div>
@@ -21,7 +21,7 @@ function ProjectCard({ project }){
             case "React":
                 return(
                     
-                    <div className="tool" style={{display: "inline-block"}}>
+                    <div key={index} className="tool" style={{display: "inline-block"}}>
                         <img className="small-icon" src={require("./Images/react2.png")} alt="react" />
                         <p>{tool}</p>
                     </div>
@@ -31,7 +31,7 @@ function ProjectCard({ project }){
             case "Ruby":
             return(
                 
-                <div className="tool" style={{display: "inline-block"}}>
+                <div key={index}  className="tool" style={{display: "inline-block"}}>
                     <img className="small-icon" src={require("./Images/ruby.png")} alt="react" />
                     <p>{tool}</p>
                 </div>
@@ -40,7 +40,7 @@ function ProjectCard({ project }){
             case "Rails":
                 return(
                     
-                    <div className="tool" style={{display: "inline-block"}}>
+                    <div key={index} className="tool" style={{display: "inline-block"}}>
                         <img className="small-icon" src={require("./Images/rails.png")} alt="react" />
                         <p>{tool}</p>
                     </div>
@@ -48,7 +48,7 @@ function ProjectCard({ project }){
                 )
             case "PostgreSQL":
                 return(
-                    <div className="tool" style={{display: "inline-block"}}>
+                    <div key={index} className="tool" style={{display: "inline-block"}}>
                         <img className="small-icon" src={require("./Images/Postgres.png")} alt="react" />
                         <p>{tool}</p>
                     </div>   
@@ -56,7 +56,7 @@ function ProjectCard({ project }){
             
             default:
                 return(
-                <p style={{display: "inline-block"}}> 
+                <p key={index} style={{display: "inline-block"}}> 
                     {tool}
                 </p>
                 )

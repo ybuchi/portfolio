@@ -67,9 +67,74 @@ function Home(){
                 </Container>   
             </Jumbotron>
             <section id="home-content">
+            
+            <article id="featured" className="content-article">
+                <h2 className="heading-sec">Featured</h2>
+                <Container >
+                    <Row>
+                        <Col lg={3} sm={12}>
+                            <img src={require("./Images/Cuisto.png")} style={{height: "200px"}} alt="Cuisto"/>
+                        </Col>
+                        <Col lg={9} sm={12} className="vertically-center">
+                            <h3>Upskill your cooking. Become your own personal chef.</h3>
+                            <Button href="https://cuisto.herokuapp.com/" target="_blank" className="nav-btn">Demo</Button>
+                            <Button variant="secondary" className="nav-btn" href="/portfolio">View Full Portfolio</Button>
+                        </Col>
 
-            <article id="values-article">
-            <h2 id="values" >Working Values</h2>
+                    </Row>
+
+                </Container>
+            </article>
+            <article id="toolkit" className="content-article">
+                <h2 className="heading-sec">My Tool Kit</h2>
+                        <Container>
+                            
+                            <Row>
+                                <Col sm={12} md={6}>
+                                    <Row>
+                                    <h4>Front-End</h4>
+                                    <Col>
+                                        <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>
+                                        <p className="about-list">JavaScript</p>
+                                    </Col>
+                                    <Col>
+                                        <img className="icon2" src={require("./Images/css2.png")} alt="javascript"/>
+                                        <p className="about-list">CSS3</p>
+                                    </Col>
+                                    <Col>
+                                        <img className="icon2" src={require("./Images/html2.png")} alt="javascript"/>
+                                        <p className="about-list">HTML5</p>
+                                    </Col>
+                                    <Col sm={12}>
+                                        <img className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
+                                        <p className="about-list">React</p>
+                                    </Col>
+                                    </Row>
+                                </Col>
+
+                                <Col sm={12} md={6}>
+                                <Row>
+                                <h4>Back-End</h4>
+                                <Col>
+                                    <img className="icon2" src={require("./Images/PY.png")} alt="python"/>
+                                    <p className="about-list">Python</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2"  src={require("./Images/Rb.png")} alt="ruby"/>
+                                    <p className="about-list">Ruby</p>
+                                </Col>
+                                <Col>
+                                    <img className="icon2"  src={require("./Images/rails2.png")} alt="ruby"/>
+                                    <p className="about-list">Rails</p>
+                                </Col>
+                                </Row>
+                                </Col>
+                            </Row>
+                        </Container>
+            </article>
+
+            <article id="values-article" className="content-article">
+            <h2 id="values" className="heading-sec" >Work Values</h2>
             {/* Navigations to Mission, How I work and Tools */}
             <div id="page-nav-btn-container">
                 <Button className="page-nav-btn" 

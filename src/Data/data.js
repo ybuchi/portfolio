@@ -37,11 +37,21 @@ const portfolio = [
         project_name : "Cuisto",
         image: "./Images/Cuisto.png",
         description: "The Best App for Home Cooks!",
-        summary: "Cuisto is a cooking app that helps home cooks streamline and upskill their cooking.",
+        summary: "Cuisto is a cooking app that helps home cooks streamline and upskill their cooking. The app's smart fridge feature allows you to stay on top of your grocery shopping and meal planning. On top of that, discover, create, save and share your favorite recipes.",
         tools: ["JavaScript", "React", "Ruby", "Rails", "PostgreSQL"],
         project_url: "https://cuisto.herokuapp.com/",
         github_url: "https://github.com/ybuchi/cuisto",
         id: 1
+    },
+    {
+        project_name : "Overbooked",
+        image: "./Images/Overbooked.png",
+        description: "Discover new books and achieve your yearly reading goals.",
+        summary: "Completing your yearly reading goals is not an easy task. We know that. And that's why we created Overbooked: to help you not just stay on track, but exceed your reading goals. Using this app, you can easily discover new reads and create curated reading lists that will keep you excited and motivated to fulfill your New Year's resolution.",
+        tools: ["JavaScript", "React", "Ruby", "Rails", "PostgreSQL"],
+        project_url: "https://overbooked123.herokuapp.com/",
+        github_url: "https://github.com/sindano1/phase-4-bookclub-project",
+        id: 2
     },
     {
         project_name : "Ellis",
@@ -51,7 +61,7 @@ const portfolio = [
         tools: ["JavaScript", "React"],
         project_url: "https://gorgeous-empanada-210319.netlify.app/",
         github_url: "https://github.com/ybuchi/us-citizenship-app",
-        id: 2
+        id: 3
     }
 
 ]

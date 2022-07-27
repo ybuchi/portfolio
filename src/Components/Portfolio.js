@@ -7,18 +7,18 @@ import { Container, Row, Col} from "react-bootstrap";
 function Portfolio(){
 
     //List out cards of portfolio project with some filter buttons
-    const mappedPortfolioCards = portfolio.map((project)=>{
+    const mappedPortfolioCards = portfolio.map((project, index)=>{
         return(
-            <ProjectCard key={project.id} project={project}/>
+            <ProjectCard key={index} project={project}/>
         )
     })
 
     return(
         <>
             <Container id="portfolio">
-                <h1 id="portfolio-title">My Portfolio</h1>
+                <h1 id="portfolio-title">Portfolio</h1>
                 <h4>Check out my past and current projects!</h4>
-                <h6>Stay tuned! More Projects and Info Coming Soon...</h6>
+                <h6>Stay tuned! More updates, projects and info will be updated regularly.</h6>
                 <Row>
                     {mappedPortfolioCards}
                 </Row>
