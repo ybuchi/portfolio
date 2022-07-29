@@ -18,7 +18,7 @@ function Portfolio(){
             <Container id="portfolio">
                 <h1 id="portfolio-title">Portfolio</h1>
                 <h4>Check out my past and current projects!</h4>
-                <h6>Stay tuned! More updates, projects and info will be updated regularly.</h6>
+                <h6 style={{marginBottom: "40px"}}>Stay tuned! More updates, projects and info will be updated regularly.</h6>
                 <Row>
                     {mappedPortfolioCards}
                 </Row>

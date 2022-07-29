@@ -1,3 +1,18 @@
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    border-radius: 50%;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
 #profile-pic{
     height: 200px;
     margin-top: 20px;
@@ -95,9 +110,12 @@
 }
 
 #featured{
-    background-color: lightgray;
+    background-color: white;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
+    background-image: url("./Images/minbg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 .content-article{
     margin-top: 0px;

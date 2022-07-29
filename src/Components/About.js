@@ -37,6 +37,7 @@ function About(){
         <div id="about-jumbo">
             {/* //Profile Picture */}
             <div id="casual-profile-img"/>
+            <p style={{color: "white"}}>A little bit more about who I am outside of work!</p>
 
             <Container>
                 <Row className="about-container">
@@ -107,56 +108,6 @@ function About(){
                         </Container>
                     </Col>
                 </Row>
-
-                <Row className="about-container">
-                    <Col>
-                        <Container>
-                            
-                            <Row>
-                                <Col>
-                                    <Row>
-                                    <h4>Front-End</h4>
-                                    <Col>
-                                        <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>
-                                        <p className="about-list">JavaScript</p>
-                                    </Col>
-                                    <Col>
-                                        <img className="icon2" src={require("./Images/css2.png")} alt="javascript"/>
-                                        <p className="about-list">CSS3</p>
-                                    </Col>
-                                    <Col>
-                                        <img className="icon2" src={require("./Images/html2.png")} alt="javascript"/>
-                                        <p className="about-list">HTML5</p>
-                                    </Col>
-                                    <Col sm={12}>
-                                        <img className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
-                                        <p className="about-list">React</p>
-                                    </Col>
-                                    </Row>
-                                </Col>
-
-                                <Col>
-                                <Row>
-                                <h4>Back-End</h4>
-                                <Col>
-                                    <img className="icon2" src={require("./Images/PY.png")} alt="python"/>
-                                    <p className="about-list">Python</p>
-                                </Col>
-                                <Col>
-                                    <img className="icon2"  src={require("./Images/Rb.png")} alt="ruby"/>
-                                    <p className="about-list">Ruby</p>
-                                </Col>
-                                <Col>
-                                    <img className="icon2"  src={require("./Images/rails2.png")} alt="ruby"/>
-                                    <p className="about-list">Rails</p>
-                                </Col>
-                                </Row>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </Col>
-                </Row>
-
             </Container>
 
         </div>

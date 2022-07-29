@@ -57,7 +57,7 @@ function Home(){
                                                 </ul>
                                             </div>
                                             <p id="software-engineer" style={{textAlign: "center", color: "white"}}>Software Engineer</p> 
-                                            <p id="skill-pane" style={{fontSize: "20px"}}>JavaScript | React | Ruby | Rails | SQL | Python</p>
+                                            <p id="skill-pane" style={{fontSize: "20px"}}>JavaScript | React | Ruby | Rails | SQL</p>
                                         </div>
                                     </div>
                                 </Col>
@@ -69,11 +69,11 @@ function Home(){
             <section id="home-content">
             
             <article id="featured" className="content-article">
-                <h2 className="heading-sec">Featured</h2>
+                <h2 className="heading-sec">Featured Project</h2>
                 <Container >
                     <Row>
                         <Col lg={3} sm={12}>
-                            <img src={require("./Images/Cuisto.png")} style={{height: "200px"}} alt="Cuisto"/>
+                            <img className="floating" src={require("./Images/Cuisto.png")} style={{height: "200px"}} alt="Cuisto"/>
                         </Col>
                         <Col lg={9} sm={12} className="vertically-center">
                             <h3>Upskill your cooking. Become your own personal chef.</h3>
@@ -86,7 +86,7 @@ function Home(){
                 </Container>
             </article>
             <article id="toolkit" className="content-article">
-                <h2 className="heading-sec">My Tool Kit</h2>
+                <h2 className="heading-sec">Tool Kit</h2>
                         <Container>
                             
                             <Row>
@@ -116,10 +116,6 @@ function Home(){
                                 <Row>
                                 <h4>Back-End</h4>
                                 <Col>
-                                    <img className="icon2" src={require("./Images/PY.png")} alt="python"/>
-                                    <p className="about-list">Python</p>
-                                </Col>
-                                <Col>
                                     <img className="icon2"  src={require("./Images/Rb.png")} alt="ruby"/>
                                     <p className="about-list">Ruby</p>
                                 </Col>
@@ -132,6 +128,7 @@ function Home(){
                             </Row>
                         </Container>
             </article>
+            <hr style={{color: "black"}}/>
 
             <article id="values-article" className="content-article">
             <h2 id="values" className="heading-sec" >Work Values</h2>
