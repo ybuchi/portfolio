@@ -1,7 +1,5 @@
 import React from "react";
-import { mission, work_tools, work } from "../Data/data";
 import "./Home.css";
-import { Link } from "react-router-dom";
 import "./Images/mountain.jpg"
 import Jumbotron from "./Jumbotron";
 import Button from 'react-bootstrap/Button';
@@ -9,18 +7,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Home(){
     const navigate = useNavigate();
     const jumboStyle = {backgroundColor: "#19282F", color: "white", position: "relative", paddingTop: "50px"};
-    const backgroundImage = ""
-
-    function handleScrollToSection(e){
-        const elementId = e.target.value
-        document.getElementById(elementId).scrollIntoView()
-    }
-    
+    const backgroundImage = "" 
 
     return(
         <>
@@ -99,7 +90,7 @@ function Home(){
                                         
                                         <Col lg={11}>
                                             <Row>
-                                                <Col lg={12}>
+                                                <Col className="padded" lg={12}>
                                                     <img id="react" className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
                                                     <p className="about-list">React</p>
                                                 </Col>
@@ -127,6 +118,9 @@ function Home(){
                                 <Col id="back-end" className="front-end" lg={12} >
 
                                 <Row>
+                                <Col className="side-title small-version" lg={1}>
+                                    <h4>Back-End</h4>
+                                </Col>
                                 <Col lg={11}>
                                     <Row>
                                         <Col lg={6}>
@@ -153,7 +147,7 @@ function Home(){
                                 </Col>
                                 
 
-                                <Col className="side-title" lg={1}>
+                                <Col className="side-title big-version" lg={1}>
                                     <h4>Back-End</h4>
                                 </Col>
 

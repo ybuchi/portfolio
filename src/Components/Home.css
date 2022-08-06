@@ -127,6 +127,9 @@
     border-bottom: white 3px solid;
     padding: 10px;
 }
+.padded{
+    padding: 10px;
+}
 
 #ruby{
     height: 100px;
@@ -141,6 +144,9 @@
 }
 .icon{
     height: 100px;
+}
+.small-version{
+    display:none;
 }
 .icon2{
     height: 60px;
@@ -375,16 +381,28 @@
         font-size: 30px;
     }
     .side-title{
-        margin-bottom: 20px;
+        
     }
     .side-title h4{
         writing-mode: horizontal-tb;
         transform: rotate(180deg);
-        font-size: 20px;
+        font-size: 40px;
+        padding: 0px 10px 0px 10px;
+        width: 100%;
+        text-align: center;
     }
     #front-end{
         border-right: solid white 1px;
     }
+    .small-version{
+        display: block;
+        transform: rotate(180deg);
+        margin-bottom: 20px;
+    }
+    .big-version{
+        display: none;
+    }
+
 
 }
 
