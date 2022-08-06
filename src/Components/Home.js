@@ -94,6 +94,9 @@ function Home(){
                                                     <img id="react" className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
                                                     <p className="about-list">React</p>
                                                 </Col>
+                                            </Row>
+                                            <Row>
+                                                
 
                                                 <Col lg={4}>
                                                     <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>

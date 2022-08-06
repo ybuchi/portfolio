@@ -378,7 +378,7 @@
     }
     
     .heading-sec{
-        font-size: 30px;
+        font-size: 45px;
     }
     .side-title{
         
@@ -392,7 +392,13 @@
         text-align: center;
     }
     #front-end{
-        border-right: solid white 1px;
+        border-style: none;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #back-end{
+        border-style: none;
+        margin-top: 20px;
     }
     .small-version{
         display: block;
