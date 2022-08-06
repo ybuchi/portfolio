@@ -4,9 +4,12 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    box-shadow: rgba(200, 200, 200, 0.2) 0px 60px 40px -7px;
     border-radius: 50%;
+    maring-top: 40px;
+    margin-bottom: 40px;
 }
+
  
 @keyframes floating {
     0% { transform: translate(0,  0px); }
@@ -26,6 +29,7 @@
     font-family: 'Chakra Petch', sans-serif;
     height: 100vh;
 }
+
 #profile-pic:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -55,6 +59,10 @@
     font-size: 60px;
     font-weight: bold;
 }
+
+
+
+
 #i-am-a{
     font-size: 30px;
 }
@@ -64,13 +72,13 @@
 }
 #skill-pane{
     margin-top: 0px;
+    font-size: 20px;
 }
 .heading-sec{
     font-size: 50px;
     font-family: 'Bungee', cursive;
-    /* text-decoration: underline; */
     margin-bottom: 35px;
-    color: black;
+
 }
 .vertically-center{
     transform: translateY(25%)
@@ -87,6 +95,19 @@
 }
 .greetings{
     font-size:50px;
+}
+.front-end{
+    background-color: white;
+    border: 3px solid black;
+    padding: 30px;
+    margin: 30px;
+
+}
+#ruby{
+    height: 100px;
+}
+#rails{
+    height: 400px;
 }
 #adjectives{
     font-size: 30px;
@@ -108,14 +129,21 @@
 #home-content{
     background-color: ivory;
 }
-
+#react{
+    height: 300px;
+}
 #featured{
-    background-color: white;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
-    background-image: url("./Images/minbg.jpg");
+    background-image: url("./Images/dinna.jpg");
     background-size: cover;
     background-position: center;
+    color: white;
+    
+    
+}
+.proj-nav{
+    margin-bottom: 40px;
 }
 .content-article{
     margin-top: 0px;
@@ -274,6 +302,9 @@
 .page-text-q:after{
     content: '"'
 }
+.content__container__list__item{
+    font-size: 40px;
+}
 .page-text-q:before, .page-text-q:after{
 	 color: red;
 	 font-size: 30px;
@@ -283,6 +314,23 @@
 	 animation-name: opacity;
 	 animation-duration: 2s;
 	 animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 576px){
+    #software-engineer{
+        font-size: 30px;
+    }
+    #yannik{
+        font-size: 40px;
+    }
+   
+    .content__container__list__item{
+        font-size: 25px;
+    }
+
+    #skill-pane{
+        font-size: 15px;
+    }
 }
 
 @-webkit-keyframes opacity {
