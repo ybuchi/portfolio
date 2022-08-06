@@ -94,7 +94,7 @@ function Home(){
                                 <Col id="front-end" className="front-end" lg={12}>
                                     <Row>
                                         <Col className="side-title front" lg={1}>
-                                            <h4 style={{fontSize: "60px"}}>Front-End</h4>
+                                            <h4>Front-End</h4>
                                         </Col> 
                                         
                                         <Col lg={11}>
@@ -140,11 +140,11 @@ function Home(){
 
                                     </Row>
                                     <Row>
-                                        <Col lg={4}>
+                                        <Col sm={6} lg={4}>
                                             <img id="postgres" className="icon2"  src={require("./Images/Postgres.png")} alt="postgres"/>
                                             <p className="about-list">Postgres</p>
                                         </Col>
-                                        <Col lg={4}>
+                                        <Col sm={6} lg={4} >
                                             <img id="nodejs" className="icon2"  src={require("./Images/node.png")} alt="node"/>
                                             <p className="about-list">Node.js</p>
                                         </Col>
