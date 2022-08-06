@@ -91,40 +91,40 @@ function Home(){
                 </h2>
                         <Container>
                             <Row >
-                                <Col className="front-end" lg={12}>
+                                <Col id="front-end" className="front-end" lg={12}>
                                     <Row>
+                                        <Col className="side-title front" lg={1}>
+                                            <h4 style={{fontSize: "60px"}}>Front-End</h4>
+                                        </Col> 
                                         
                                         <Col lg={11}>
                                             <Row>
-                                            <Col lg={12}>
-                                                <img id="react" className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
-                                                <p className="about-list">React</p>
-                                            </Col>
+                                                <Col lg={12}>
+                                                    <img id="react" className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
+                                                    <p className="about-list">React</p>
+                                                </Col>
 
-                                            <Col lg={4}>
-                                                <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>
-                                                <p className="about-list">JavaScript</p>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <img className="icon2" src={require("./Images/css2.png")} alt="javascript"/>
-                                                <p className="about-list">CSS3</p>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <img className="icon2" src={require("./Images/html2.png")} alt="javascript"/>
-                                                <p className="about-list">HTML5</p>
-                                            </Col>
-
+                                                <Col lg={4}>
+                                                    <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>
+                                                    <p className="about-list">JavaScript</p>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <img className="icon2" src={require("./Images/css2.png")} alt="javascript"/>
+                                                    <p className="about-list">CSS3</p>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <img className="icon2" src={require("./Images/html2.png")} alt="javascript"/>
+                                                    <p className="about-list">HTML5</p>
+                                                </Col>
                                             </Row>  
                                         </Col>
 
-                                        <Col className="side-title" lg={1}>
-                                            <h4 style={{fontSize: "60px"}}>Front-End</h4>
-                                        </Col> 
+                                        
                                     
                                     </Row>
                                 </Col>
 
-                                <Col className="front-end" lg={12} >
+                                <Col id="back-end" className="front-end" lg={12} >
 
                                 <Row>
                                 <Col lg={11}>
@@ -137,6 +137,14 @@ function Home(){
                                             <img id="rails" className="icon2"  src={require("./Images/rails.png")} alt="ruby"/>
                                             <p className="about-list">Rails</p>
                                         </Col>
+
+                                    </Row>
+                                    <Row>
+                                        <Col lg={12}>
+                                            <img id="postgres" className="icon2"  src={require("./Images/Postgres.png")} alt="postgres"/>
+                                            <p className="about-list">Postgres</p>
+                                        </Col>
+
                                     </Row>
                                 </Col>
                                 
@@ -146,6 +154,7 @@ function Home(){
                                 </Col>
 
                                 </Row>
+
                                 </Col>
                             </Row>
                         </Container>

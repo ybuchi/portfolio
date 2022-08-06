@@ -60,9 +60,6 @@
     font-weight: bold;
 }
 
-
-
-
 #i-am-a{
     font-size: 30px;
 }
@@ -115,6 +112,20 @@
 .side-title h4{
     font-size: 60px;
     margin: 0;
+    background-color: white;
+    color: #19282F;
+}
+
+#front-end{
+    border-left: white 1px solid;
+    border-top: white 1px solid;
+    border-bottom: white 3px solid;
+}
+
+#back-end{
+    border-right: white 1px solid;
+    border-top: white 1px solid;
+    border-bottom: white 3px solid;
 }
 
 #ruby{
@@ -138,6 +149,9 @@
 .icon2 + p{
     font-size: 15px;
 }
+.front{
+    transform: rotate(180deg);
+}
 .recent-projects{
     border-top: 3px darkblue solid;
     border-bottom: 3px darkblue solid;
@@ -155,7 +169,7 @@
     background-color: #19282F;
 }
 #react{
-    height: 300px;
+    height: 200px;
 }
 #featured{
     height: 100vh;
@@ -165,8 +179,6 @@
     background-size: cover;
     background-position: center;
     color: white;
-    
-    
 }
 .proj-nav{
     margin-bottom: 40px;
@@ -230,6 +242,7 @@
     margin-left: 30px;
     margin-right: 30px;
 }
+
 .content__container__list {
     margin-top: 0;
     padding-left: 0;
