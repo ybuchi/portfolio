@@ -133,6 +133,7 @@
     height: 300px;
 }
 #featured{
+    height: 100vh;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
     background-image: url("./Images/dinna.jpg");
@@ -330,6 +331,10 @@
 
     #skill-pane{
         font-size: 15px;
+    }
+    
+    .heading-sec{
+        font-size: 30px;
     }
 }
 
