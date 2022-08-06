@@ -33,16 +33,7 @@
 .section-container{
     margin-bottom: 80px;
 }
-.icon{
-    height: 100px;
-}
-.icon2{
-    height: 40px;
-    margin-bottom: 10px;
-}
-.icon2 + p{
-    font-size: 15px;
-}
+
 #about-jumbo{
     background-image: url("./Images/Zermatt.jpg");
     background-position-y: 25%;

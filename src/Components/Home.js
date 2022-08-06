@@ -60,8 +60,8 @@ function Home(){
                     </Row>
                 </Container>   
             </Jumbotron>
+
             <section id="home-content">
-            
             <article id="featured" className="content-article">
                 
                 <Container >
@@ -84,45 +84,67 @@ function Home(){
                 </Container>
             </article>
             <article id="toolkit" className="content-article">
-                <h2 className="heading-sec">Tool Kit</h2>
+                
+                <h2 className="heading-sec">
+                <img src={require("./Images/tools.png")} alt="tools" style={{height: "40px", marginRight: "20px"}}/>
+                    Tool Kit
+                </h2>
                         <Container>
-                            
                             <Row >
                                 <Col className="front-end" lg={12}>
                                     <Row>
-                                    <h4>Front-End</h4>
-                                    <Col sm={12}>
-                                        <img id="react" className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
-                                        <p className="about-list">React</p>
-                                    </Col>
-                                    <Col>
-                                        <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>
-                                        <p className="about-list">JavaScript</p>
-                                    </Col>
-                                    <Col>
-                                        <img className="icon2" src={require("./Images/css2.png")} alt="javascript"/>
-                                        <p className="about-list">CSS3</p>
-                                    </Col>
-                                    <Col>
-                                        <img className="icon2" src={require("./Images/html2.png")} alt="javascript"/>
-                                        <p className="about-list">HTML5</p>
-                                    </Col>
+                                        
+                                        <Col lg={11}>
+                                            <Row>
+                                            <Col lg={12}>
+                                                <img id="react" className="icon2" src={require("./Images/react2.png")} alt="javascript"/>
+                                                <p className="about-list">React</p>
+                                            </Col>
+
+                                            <Col lg={4}>
+                                                <img className="icon2" src={require("./Images/JS.png")} alt="javascript"/>
+                                                <p className="about-list">JavaScript</p>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <img className="icon2" src={require("./Images/css2.png")} alt="javascript"/>
+                                                <p className="about-list">CSS3</p>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <img className="icon2" src={require("./Images/html2.png")} alt="javascript"/>
+                                                <p className="about-list">HTML5</p>
+                                            </Col>
+
+                                            </Row>  
+                                        </Col>
+
+                                        <Col className="side-title" lg={1}>
+                                            <h4 style={{fontSize: "60px"}}>Front-End</h4>
+                                        </Col> 
                                     
                                     </Row>
                                 </Col>
 
                                 <Col className="front-end" lg={12} >
+
                                 <Row>
-                                <h4>Back-End</h4>
-                                <Col lg={12}>
-                                    <img id="ruby" className="icon2"  src={require("./Images/Rb.png")} alt="ruby"/>
-                                    <p className="about-list">Ruby</p>
+                                <Col lg={11}>
+                                    <Row>
+                                        <Col lg={6}>
+                                            <img id="ruby" className="icon2"  src={require("./Images/Rb.png")} alt="ruby"/>
+                                            <p className="about-list">Ruby</p>
+                                        </Col>
+                                        <Col lg={6}>
+                                            <img id="rails" className="icon2"  src={require("./Images/rails.png")} alt="ruby"/>
+                                            <p className="about-list">Rails</p>
+                                        </Col>
+                                    </Row>
                                 </Col>
-                                <h2>On</h2>
-                                <Col lg={12}>
-                                    <img id="rails" className="icon2"  src={require("./Images/rails2.png")} alt="ruby"/>
-                                    <p className="about-list">Rails</p>
+                                
+
+                                <Col className="side-title" lg={1}>
+                                    <h4>Back-End</h4>
                                 </Col>
+
                                 </Row>
                                 </Col>
                             </Row>

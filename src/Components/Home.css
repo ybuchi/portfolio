@@ -78,6 +78,7 @@
     font-size: 50px;
     font-family: 'Bungee', cursive;
     margin-bottom: 35px;
+    color: white;
 
 }
 .vertically-center{
@@ -97,21 +98,45 @@
     font-size:50px;
 }
 .front-end{
-    background-color: white;
-    border: 3px solid black;
+    /* background-color: white;
+    border: 3px solid black; */
     padding: 30px;
     margin: 30px;
-
+    color: white;
 }
+
+.side-title{
+    writing-mode: vertical-rl;
+    /* height: 100%; */
+    font-size: 60px;
+    text-align: center;
+}
+
+.side-title h4{
+    font-size: 60px;
+    margin: 0;
+}
+
 #ruby{
     height: 100px;
 }
 #rails{
-    height: 400px;
+    max-height: 100px;
+    height: auto;
 }
 #adjectives{
     font-size: 30px;
     text-align: center;
+}
+.icon{
+    height: 100px;
+}
+.icon2{
+    height: 60px;
+    margin-bottom: 10px;
+}
+.icon2 + p{
+    font-size: 15px;
 }
 .recent-projects{
     border-top: 3px darkblue solid;
@@ -127,7 +152,7 @@
     background-attachment: fixed; */
 }
 #home-content{
-    background-color: ivory;
+    background-color: #19282F;
 }
 #react{
     height: 300px;
