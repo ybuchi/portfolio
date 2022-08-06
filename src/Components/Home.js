@@ -140,9 +140,13 @@ function Home(){
 
                                     </Row>
                                     <Row>
-                                        <Col lg={12}>
+                                        <Col lg={4}>
                                             <img id="postgres" className="icon2"  src={require("./Images/Postgres.png")} alt="postgres"/>
                                             <p className="about-list">Postgres</p>
+                                        </Col>
+                                        <Col lg={4}>
+                                            <img id="nodejs" className="icon2"  src={require("./Images/node.png")} alt="node"/>
+                                            <p className="about-list">Node.js</p>
                                         </Col>
 
                                     </Row>
@@ -158,92 +162,6 @@ function Home(){
                                 </Col>
                             </Row>
                         </Container>
-            </article>
-            <hr style={{color: "black"}}/>
-
-            <article id="values-article" className="content-article">
-            <h2 id="values" className="heading-sec" >Work Values</h2>
-            {/* Navigations to Mission, How I work and Tools */}
-            <div id="page-nav-btn-container">
-                <Button className="page-nav-btn" 
-                        variant="light"
-                        value="mission"
-                        onClick={handleScrollToSection}>
-                        Mission-Driven
-                </Button>
-                <Button className="page-nav-btn" 
-                        variant="light"
-                        value="work"
-                        onClick={handleScrollToSection}>
-                        Self-Motivated
-                </Button>
-                <Button className="page-nav-btn" 
-                        variant="light"
-                        value="tools"
-                        onClick={handleScrollToSection}>
-                        Team Player
-                </Button>
-                
-            </div> 
-
-                <article className="page-text-container">
-                    <Container>
-                        <Row>
-                            <Col sm={12} md={6} id="mission-col-container" className="col-container">
-                                <h1 className="page-section-header" id="mission">Mission-Driven</h1>
-                                <p className="page-text-p">{mission.paragraph}</p>
-                                <p className="page-text-p">{mission.paragraph2}</p>
-                                <p className="page-text-p">{mission.paragraph3}</p>
-                            </Col>
-                            <Col id="mission-quote" style={{position: "relative"}} sm={12} md={6}>
-                                <h3 className="page-text-q">{mission.quote}</h3>
-                            </Col>
-                        </Row>   
-                    </Container> 
-                </article>
-
-            
-                <div className="page-text-container">
-                    <Container>
-                        <Row>
-                            <Col id="always-be-coding" style={{position: "relative"}} sm={12} md={6}>
-                                <div className="page-text-q">
-                                    <h3>There is no passion without struggle.</h3>
-                                    <h6>-Albert Camus</h6>
-                                </div>
-                                
-                            </Col>
-                            <Col sm={12} md={6} id="work-col-container" className="col-container">
-                                <h1 className="page-section-header" id="work">Self-Motivated</h1>
-                                <p className="page-text-p">{work.paragraph1}</p>
-                                <p className="page-text-p">{work.paragraph2}</p>
-                                <p className="page-text-p">{work.paragraph3}</p>
-                                <p className="page-text-p">{work.paragraph4}</p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-
-
-
-                <div className="page-text-container">
-                    <Container>
-                        <Row>
-                            <Col sm={12} md={6} id="tools-col-container" className="col-container">
-                                <h1 className="page-section-header" id="tools">Team Player</h1>
-                                <p className="page-text-p">{work_tools.paragraph1}</p>
-                                <p className="page-text-p">{work_tools.paragraph2}</p>
-                                <p className="page-text-p">{work_tools.paragraph3}</p>
-                            </Col>
-                            <Col id="human-centric" style={{position: "relative"}} sm={12} md={6}>
-                                <div className="page-text-q">
-                                    <h3>Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination.</h3>
-                                    <h6>-Albert Einstein</h6>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
             </article>
             </section>
         </>

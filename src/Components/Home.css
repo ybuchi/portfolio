@@ -374,6 +374,17 @@
     .heading-sec{
         font-size: 30px;
     }
+    .side-title{
+        margin-bottom: 20px;
+    }
+    .side-title h4{
+        writing-mode: horizontal-tb;
+        transform: rotate(180deg);
+    }
+    #front-end{
+        border-right: solid white 1px;
+    }
+
 }
 
 @-webkit-keyframes opacity {
