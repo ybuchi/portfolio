@@ -379,10 +379,9 @@
     
     .heading-sec{
         font-size: 45px;
+        margin-bottom: 20px;
     }
-    .side-title{
-        
-    }
+
     .side-title h4{
         writing-mode: horizontal-tb;
         transform: rotate(180deg);
